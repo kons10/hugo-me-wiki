@@ -1,0 +1,12 @@
+<header>
+  <nav class="nav-header">
+    <div class="nav-logo">{{ .Site.Title }}</div>
+    <div class="nav-icon-links">
+      {{- range .Site.Params.navLinks }}
+      <a href="{{ .url }}" {{ if not (hasPrefix .url "/") }}target="_blank" rel="noopener noreferrer"{{ end }}>
+        <img src="{{ (printf "svg/%s" .icon) | relURL }}" alt="{{ .alt }}">
+      </a>
+      {{- end }}
+    </div>
+  </nav>
+</header>

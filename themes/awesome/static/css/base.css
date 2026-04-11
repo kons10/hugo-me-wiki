@@ -1,0 +1,242 @@
+/* =========================
+   共通フォント＆リセット
+   ========================= */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: 
+    "Microsoft YaHei",
+    "Microsoft JhengHei",
+    "Hiragino Sans GB",
+    "Noto Sans CJK SC",
+    "Noto Sans CJK TC",
+    "Noto Sans CJK JP",
+    "Yu Gothic",
+    sans-serif;
+}
+
+/* =========================
+   ヘッダー（fixed）
+   ========================= */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 56px;
+  background: transparent;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: block;
+  flex-shrink: 0;
+}
+
+.nav-header {
+  width: 100%;
+  height: 56px;
+  background: #223a6d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: relative;
+  font-family: inherit;
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-left: 1.2em;
+  color: #fff;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.nav-icon-links {
+  display: flex;
+  gap: 2em;
+  margin-right: 1.5em;
+  align-items: center;
+}
+
+.nav-icon-links a img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  filter: brightness(0.98);
+  transition: filter 0.2s, transform 0.2s;
+}
+
+.nav-icon-links a:hover img {
+  filter: brightness(1.2);
+  transform: translateY(-2px) scale(1.08);
+}
+
+/* =========================
+   メインコンテンツ
+   ========================= */
+body {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #2b6cb0 0%, #63b3ed 100%);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 1 auto;
+  max-width: 800px;
+  margin: 56px auto 0 auto;
+  padding: 1.5em 1.5em 2.5em;
+  border-radius: 16px;
+  color: #fff;
+  background: #ffffff18;
+  box-shadow: 0 2px 12px #0006;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+@media (max-width: 700px) {
+  main { margin-top: 44px; }
+}
+@media (min-width: 701px) {
+  main { margin-top: 56px; }
+}
+
+/* =========================
+   フッター
+   ========================= */
+footer.footer-main {
+  background: #23232b;
+  color: #f1f1f5;
+  padding: 40px 0 30px 0;
+  text-align: center;
+  font-family: inherit;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-social-container {
+  margin-bottom: 20px;
+}
+
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-social-links a {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  background: #2d2d36;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-links a:hover {
+  background: #44445a;
+  transform: translateY(-3px);
+}
+
+.footer-social-links img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0.9);
+  transition: filter 0.3s;
+}
+
+.footer-social-links a:hover img {
+  filter: brightness(1.2);
+}
+
+.footer-divider {
+  width: 80%;
+  max-width: 600px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+}
+
+.footer-legal {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #b0b0b8;
+}
+
+.footer-copyright {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.footer-license a {
+  color: #6cc1f2;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-license a:hover {
+  color: #8fd3ff;
+  text-decoration: underline;
+}
+
+/* =========================
+   レスポンシブ
+   ========================= */
+@media (max-width: 600px) {
+  .nav-logo {
+    font-size: 1em;
+    margin-left: 0.6em;
+  }
+  .nav-icon-links {
+    gap: 1em;
+    margin-right: 0.6em;
+  }
+  .nav-icon-links a img {
+    width: 32px;
+    height: 32px;
+  }
+  header, .nav-header {
+    height: 44px !important;
+    min-height: 44px !important;
+    max-height: 44px !important;
+  }
+  main {
+    margin-top: 44px !important;
+  }
+  footer.footer-main {
+    padding: 1.5em 0.6em 1em;
+  }
+}
+
+@media (max-width: 700px), (orientation: portrait) {
+  footer.footer-main {
+    padding: 30px 20px;
+  }
+  .footer-social-links {
+    gap: 15px;
+  }
+  .footer-social-links a {
+    width: 42px;
+    height: 42px;
+  }
+  .footer-social-links img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer-legal {
+    font-size: 13px;
+  }
+}

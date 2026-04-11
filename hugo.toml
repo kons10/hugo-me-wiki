@@ -1,0 +1,102 @@
+baseURL = "/"
+languageCode = "ja"
+title = "Awesome-site"
+theme = "awesome"
+defaultContentLanguage = "ja"
+
+[params]
+  author = "こんせんと"
+  description = "こんせんとの個人サイト"
+  licenseURL = "https://opensource.org/licenses/MIT"
+
+[[params.navLinks]]
+  icon = "home.svg"
+  alt = "Home"
+  url = "/"
+
+[[params.navLinks]]
+  icon = "person.svg"
+  alt = "Profile"
+  url = "/profile/"
+
+[[params.navLinks]]
+  icon = "link.svg"
+  alt = "Links"
+  url = "/links/"
+
+[[params.navLinks]]
+  icon = "dl.svg"
+  alt = "Downloads"
+  url = "/downloads/"
+
+[[params.socialLinks]]
+  icon = "x.svg"
+  alt = "X"
+  title = "X"
+  url = "http://x.com/kons_10"
+
+[[params.socialLinks]]
+  icon = "insta.svg"
+  alt = "Instagram"
+  title = "Instagram"
+  url = "http://instagram.com/heroblineg_1"
+
+[[params.socialLinks]]
+  icon = "github.svg"
+  alt = "GitHub"
+  title = "GitHub"
+  url = "http://github.com/kons10"
+
+[[params.socialLinks]]
+  icon = "misskey.svg"
+  alt = "Misskey"
+  title = "Misskey"
+  url = "http://misskey.io/@heroblineg"
+
+[[params.socialLinks]]
+  icon = "youtube.svg"
+  alt = "YouTube"
+  title = "YouTube"
+  url = "http://youtube.com/@heroblineg"
+
+[[params.socialLinks]]
+  icon = "tiktok.svg"
+  alt = "TikTok"
+  title = "TikTok"
+  url = "http://tiktok.com/@heroblineg"
+
+[[params.socialLinks]]
+  icon = "bluesky.svg"
+  alt = "Bluesky"
+  title = "Bluesky"
+  url = "http://heroblineg.bsky.social"
+
+[[params.socialLinks]]
+  icon = "discord.svg"
+  alt = "Discord"
+  title = "Discord"
+  url = "http://discord.com/"
+
+[[params.socialLinks]]
+  icon = "bilibili.svg"
+  alt = "B帖"
+  title = "B帖"
+  url = "http://bilibili.com"
+
+[[params.socialLinks]]
+  icon = "ubuntu.svg"
+  alt = "Launchpad"
+  title = "Launchpad"
+  url = "http://launchpad.net/~heroblineg"
+
+[[params.socialLinks]]
+  icon = "niconico.svg"
+  alt = "ニコニコ"
+  title = "ニコニコ"
+  url = "http://www.nicovideo.jp/user/125282486"
+
+[[params.socialLinks]]
+  icon = "wikimedia.svg"
+  alt = "Wikimedia"
+  title = "Wikimedia"
+  url = "http://wikimedia.org/wiki/%E5%88%A9%E7%94%A8%E8%80%85:Heroblineg"

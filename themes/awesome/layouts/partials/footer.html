@@ -1,0 +1,17 @@
+<footer class="footer-main">
+  <div class="footer-social-container">
+    <div class="footer-social-links">
+      {{- range .Site.Params.socialLinks }}
+      <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .title }}">
+        <img src="{{ (printf "svg/%s" .icon) | relURL }}" alt="{{ .alt }}" width="24" height="24">
+      </a>
+      {{- end }}
+    </div>
+  </div>
+  <div class="footer-divider"></div>
+  <div class="footer-legal">
+    <p class="footer-copyright">© {{ now.Year }} {{ .Site.Params.author }} All Rights Reserved</p>
+    <p class="footer-license">このサイトの内容は
+      <a href="{{ .Site.Params.licenseURL }}" target="_blank" rel="noopener noreferrer">MITライセンス</a>の下で提供されています。</p>
+  </div>
+</footer>
