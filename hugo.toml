@@ -5,9 +5,8 @@ theme = "awesome"
 defaultContentLanguage = "ja"
 
 [params]
-  author = "こんせんと"
-  description = "こんせんとの個人サイト"
-  licenseURL = "https://opensource.org/licenses/MIT"
+  author = "奏音"
+  description = "奏音の個人サイト"
 
 [[params.navLinks]]
   icon = "home.svg"
