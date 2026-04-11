@@ -10,21 +10,25 @@ defaultContentLanguage = "ja"
 
 [[params.navLinks]]
   icon = "home.svg"
+  mdIcon = "home"
   alt = "Home"
   url = "/"
 
 [[params.navLinks]]
   icon = "person.svg"
+  mdIcon = "person"
   alt = "Profile"
   url = "/profile/"
 
 [[params.navLinks]]
   icon = "link.svg"
+  mdIcon = "link"
   alt = "Links"
   url = "/links/"
 
 [[params.navLinks]]
   icon = "dl.svg"
+  mdIcon = "download"
   alt = "Downloads"
   url = "/downloads/"
 

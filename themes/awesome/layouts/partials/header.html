@@ -3,10 +3,28 @@
     <div class="nav-logo">{{ .Site.Title }}</div>
     <div class="nav-icon-links">
       {{- range .Site.Params.navLinks }}
-      <a href="{{ .url }}" {{ if not (hasPrefix .url "/") }}target="_blank" rel="noopener noreferrer"{{ end }}>
-        <img src="{{ (printf "svg/%s" .icon) | relURL }}" alt="{{ .alt }}">
-      </a>
+      <md-icon-button href="{{ .url }}"{{ if not (hasPrefix .url "/") }} target="_blank" rel="noopener noreferrer"{{ end }} title="{{ .alt }}">
+        {{- if .mdIcon }}
+        <md-icon>{{ .mdIcon }}</md-icon>
+        {{- else }}
+        <img src="{{ (printf "svg/%s" .icon) | relURL }}" alt="{{ .alt }}" width="40" height="40">
+        {{- end }}
+      </md-icon-button>
       {{- end }}
     </div>
   </nav>
+  <noscript>
+    <style>.nav-icon-links md-icon-button { display: none; }</style>
+    <div class="nav-icon-links" style="position:fixed; top:0; right:1.5em; height:56px; display:flex; align-items:center; gap:2em;">
+      {{- range .Site.Params.navLinks }}
+      <a href="{{ .url }}"{{ if not (hasPrefix .url "/") }} target="_blank" rel="noopener noreferrer"{{ end }} title="{{ .alt }}">
+        {{- if .mdIcon }}
+        <md-icon>{{ .mdIcon }}</md-icon>
+        {{- else }}
+        <img src="{{ (printf "svg/%s" .icon) | relURL }}" alt="{{ .alt }}" width="40" height="40">
+        {{- end }}
+      </a>
+      {{- end }}
+    </div>
+  </noscript>
 </header>

@@ -2,9 +2,9 @@
   <div class="footer-social-container">
     <div class="footer-social-links">
       {{- range .Site.Params.socialLinks }}
-      <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .title }}">
+      <md-icon-button href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .title }}">
         <img src="{{ (printf "svg/%s" .icon) | relURL }}" alt="{{ .alt }}" width="24" height="24">
-      </a>
+      </md-icon-button>
       {{- end }}
     </div>
   </div>
@@ -14,4 +14,19 @@
     <p class="footer-license">このサイトの内容は
       <a href="{{ .Site.Params.licenseURL }}" target="_blank" rel="noopener noreferrer">MITライセンス</a>の下で提供されています。</p>
   </div>
+
+  <noscript>
+    <style>.footer-social-links md-icon-button { display: none; }</style>
+    <div class="footer-social-links" style="display:flex; justify-content:center; flex-wrap:wrap; gap:20px; margin-bottom:20px;">
+      {{- range .Site.Params.socialLinks }}
+      <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .title }}">
+        {{- if .mdIcon }}
+        <md-icon>{{ .mdIcon }}</md-icon>
+        {{- else }}
+        <img src="{{ (printf "svg/%s" .icon) | relURL }}" alt="{{ .alt }}" width="24" height="24">
+        {{- end }}
+      </a>
+      {{- end }}
+    </div>
+  </noscript>
 </footer>
