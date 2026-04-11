@@ -73,11 +73,6 @@ header {
   transition: filter 0.2s, transform 0.2s;
 }
 
-.nav-icon-links a:hover img {
-  filter: brightness(1.2);
-  transform: translateY(-2px) scale(1.08);
-}
-
 /* =========================
    メインコンテンツ
    ========================= */
