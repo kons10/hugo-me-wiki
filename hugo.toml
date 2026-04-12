@@ -8,6 +8,10 @@ defaultContentLanguage = "ja"
   author = "奏音"
   description = "奏音の個人サイト"
 
+  # ライセンス設定（自由に変更可能）
+  license = "CC BY 4.0"
+  licenseURL = "https://creativecommons.org/licenses/by/4.0/"
+
 [[params.navLinks]]
   icon = "home.svg"
   mdIcon = "home"
