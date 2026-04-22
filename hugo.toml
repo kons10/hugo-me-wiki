@@ -25,6 +25,12 @@ defaultContentLanguage = "ja"
   url = "/profile/"
 
 [[params.navLinks]]
+  icon = "link.svg"
+  mdIcon = "link"
+  alt = "Links"
+  url = "/links/"
+
+[[params.navLinks]]
   icon = "news.svg"
   mdIcon = "news"
   alt = "Blog"
