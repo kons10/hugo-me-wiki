@@ -40,70 +40,76 @@ defaultContentLanguage = "ja"
   icon = "x.svg"
   alt = "X"
   title = "X"
-  url = "http://x.com/kons_10"
+  url = "https://x.com/kons_10"
 
 [[params.socialLinks]]
   icon = "insta.svg"
   alt = "Instagram"
   title = "Instagram"
-  url = "http://instagram.com/heroblineg_1"
+  url = "https://instagram.com/heroblineg_1"
 
 [[params.socialLinks]]
   icon = "github.svg"
   alt = "GitHub"
   title = "GitHub"
-  url = "http://github.com/kons10"
+  url = "https://github.com/kons10"
 
 [[params.socialLinks]]
   icon = "misskey.svg"
   alt = "Misskey"
   title = "Misskey"
-  url = "http://misskey.io/@heroblineg"
+  url = "https://misskey.io/@heroblineg"
 
 [[params.socialLinks]]
   icon = "youtube.svg"
   alt = "YouTube"
   title = "YouTube"
-  url = "http://youtube.com/@heroblineg"
+  url = "https://youtube.com/@heroblineg"
 
 [[params.socialLinks]]
   icon = "tiktok.svg"
   alt = "TikTok"
   title = "TikTok"
-  url = "http://tiktok.com/@heroblineg"
+  url = "https://tiktok.com/@heroblineg"
 
 [[params.socialLinks]]
   icon = "bluesky.svg"
   alt = "Bluesky"
   title = "Bluesky"
-  url = "http://heroblineg.bsky.social"
+  url = "https://heroblineg.bsky.social"
 
 [[params.socialLinks]]
   icon = "discord.svg"
   alt = "Discord"
   title = "Discord"
-  url = "http://discord.com/"
+  url = "https://discord.com/"
 
 [[params.socialLinks]]
   icon = "bilibili.svg"
   alt = "B帖"
   title = "B帖"
-  url = "http://bilibili.com"
+  url = "https://bilibili.com"
 
 [[params.socialLinks]]
   icon = "ubuntu.svg"
   alt = "Launchpad"
   title = "Launchpad"
-  url = "http://launchpad.net/~heroblineg"
+  url = "https://launchpad.net/~heroblineg"
 
 [[params.socialLinks]]
   icon = "niconico.svg"
   alt = "ニコニコ"
   title = "ニコニコ"
-  url = "http://www.nicovideo.jp/user/125282486"
+  url = "https://www.nicovideo.jp/user/125282486"
 
 [[params.socialLinks]]
   icon = "wikimedia.svg"
   alt = "Wikimedia"
   title = "Wikimedia"
-  url = "http://wikimedia.org/wiki/%E5%88%A9%E7%94%A8%E8%80%85:Heroblineg"
+  url = "https://wikimedia.org/wiki/%E5%88%A9%E7%94%A8%E8%80%85:Heroblineg"
+
+[[params.socialLinks]]
+  icon = "telegram.svg"
+  alt = "ニコニコ"
+  title = "ニコニコ"
+  url = "https://t.me/k0ns10"
