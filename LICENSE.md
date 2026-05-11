@@ -1,1 +1,1 @@
-forever don't know
+you can fork this repo with mit license.
