@@ -4,6 +4,11 @@ title = "Awesome-site"
 theme = "awesome"
 defaultContentLanguage = "ja"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 [params]
   author = "奏音"
   description = "奏音の個人サイト"
