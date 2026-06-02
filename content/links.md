@@ -8,9 +8,9 @@ title: "Links"
 ここにリンクを置いておく
 
 ## 相互リンク
-### [![ちくにざき](https://imgur.com/JEP1xa8.webp)](https://157.f5.si/)
+### [![ちくにざき](https://i.imgur.com/JEP1xa8.webp)](https://157.f5.si/)
 自作のPHPエンジン作ってる凄い人
 ### [taitai2661](https://taitai2661dayo.pages.dev/)
 最近レート制限のない超軽量AI作ったらしい
-### [![風止渚のホームページ](https://imgur.com/94ifNlf.webp)](https://kzng.f5.si/)
+### [![風止渚のホームページ](https://i.imgur.com/94ifNlf.webp)](https://kzng.f5.si/)
 一日にやってることが多い高専の人
