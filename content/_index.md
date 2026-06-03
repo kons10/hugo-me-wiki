@@ -2,8 +2,6 @@
 title: "Welcome to this page!"
 ---
 
-<img src="//counter1.fc2.com/counter_img.php?id=39081299&main=1" />
-<!-- FC2カウンター ここまで -->
 
 奏音公式です～
 　メインページって何置けばいい？
