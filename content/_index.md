@@ -1,6 +1,11 @@
 ---
 title: "Welcome to this page!"
 ---
+
+<!-- FC2カウンター ここから -->
+<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39081299&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=39081299&main=1" /></noscript>
+<!-- FC2カウンター ここまで -->
+
 奏音公式です～
 　メインページって何置けばいい？
  ## リンク集
