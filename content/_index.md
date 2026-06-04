@@ -78,9 +78,6 @@ Linuxやオープンソースに興味があって、環境いじったり小さ
 ---
 
 ## 📊 GitHub Stats
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs?username=kons10&show_icons=true&theme=dark&layout=compact)
-
-![Stats](https://github-readme-stats.vercel.app/api?username=kons10&show_icons=true&theme=dark)
 
 ![Streak](https://github-readme-streak-stats.herokuapp.com/?user=kons10&theme=dark)
 
