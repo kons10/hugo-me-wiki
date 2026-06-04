@@ -3,10 +3,11 @@
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-  <link rel="stylesheet" href="{{ "css/base.css" | relURL }}">
-  <link rel="stylesheet" href="{{ "css/dark.css" | relURL }}">
-  <link rel="stylesheet" media="(prefers-color-scheme: light)" href="{{ "css/light.css" | relURL }}">
-  <script type="module" src="{{ "js/mwc.js" | relURL }}"></script>
+  <link rel="stylesheet" href="{{ "css/base.css" | relURL }}" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ "css/dark.css" | relURL }}" crossorigin="anonymous">
+  <link rel="stylesheet" media="(prefers-color-scheme: light)" href="{{ "css/light.css" | relURL }}" crossorigin="anonymous">
+  <link rel="preload" href="/js/mwc.js" as="script" crossorigin="anonymous">
+  <script src="/js/mwc.js" crossorigin="anonymous"></script>
 　<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
 
 </head>
