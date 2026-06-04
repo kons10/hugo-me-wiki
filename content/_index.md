@@ -77,12 +77,6 @@ Linuxやオープンソースに興味があって、環境いじったり小さ
 
 ---
 
-## 📊 GitHub Stats
-
-![Streak](https://github-readme-streak-stats.herokuapp.com/?user=kons10&theme=dark)
-
----
-
 ## 📌 メモ
 このページは Hugo で管理してるプロフィール。  
 気分で更新する。
