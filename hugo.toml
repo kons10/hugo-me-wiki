@@ -1,6 +1,6 @@
 baseURL = "https://wiki.kto.f5.si/"
 languageCode = "ja"
-title = "Awesome-site"
+title = "ZòuYīn"
 theme = "awesome"
 defaultContentLanguage = "ja"
 
@@ -39,7 +39,7 @@ defaultContentLanguage = "ja"
   icon = "x.svg"
   alt = "X"
   title = "X"
-  url = "https://x.com/kons_10"
+  url = "https://x.com/i/user/2038849475368599552"
 
 [[params.socialLinks]]
   icon = "insta.svg"
@@ -75,7 +75,7 @@ defaultContentLanguage = "ja"
   icon = "bluesky.svg"
   alt = "Bluesky"
   title = "Bluesky"
-  url = "https://heroblineg.bsky.social"
+  url = "https://atp.zyn.f5.si"
 
 [[params.socialLinks]]
   icon = "discord.svg"
