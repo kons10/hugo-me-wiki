@@ -109,6 +109,6 @@ defaultContentLanguage = "ja"
 
 [[params.socialLinks]]
   icon = "telegram.svg"
-  alt = "ニコニコ"
-  title = "ニコニコ"
+  alt = "Telegram"
+  title = "Telegram"
   url = "https://t.me/k0ns10"
