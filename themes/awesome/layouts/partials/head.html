@@ -1,11 +1,12 @@
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="{{ printf "%s" (cond .Description .Site.Params.description) }}">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/dark.css">
-  <link rel="stylesheet" media="(prefers-color-scheme: light)" href="css/light.css">
-  <script type="module" src="js/mwc.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined>
+  <link rel="stylesheet" href="{{ "css/base.css" | relURL }}">
+  <link rel="stylesheet" href="{{ "css/dark.css" | relURL }}">
+  <link rel="stylesheet" media="(prefers-color-scheme: light)" href="{{ "css/light.css" | relURL }}">
+  <script type="module" src="{{ "js/mwc.js" | relURL }}"></script>
+　<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+
 </head>
