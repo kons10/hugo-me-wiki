@@ -10,8 +10,7 @@ title: "Welcome to this page!"
   img-type="webp"
   left
   right
-  width="50"
-></count-db>
+  width="50"></count-db>
 
 奏音公式です～
 　メインページって何置けばいい？
