@@ -16,7 +16,7 @@ title: "Welcome to this page!"
 
 奏音公式です～
 　メインページって何置けばいい？
- ## リンク集
+ ## 自分のサイトたち
 - [Blog](https://hugo.kto.f5.si)
 - [更新停止中のサイト](https://old.zyn.f5.si)
 - [Silver Forest歌詞置き場](https://sf-wiki.f5.si)
@@ -28,7 +28,7 @@ title: "Welcome to this page!"
 
 ![icon](https://raw.githubusercontent.com/Linux-jam/Photo-Gallery/refs/heads/main/kons_10.jpg)
 
-学生 / 日本在住  
+学生 / 日本在住
 🎂 2月21日  
 
 ---
