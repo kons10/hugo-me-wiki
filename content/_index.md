@@ -3,14 +3,15 @@ title: "Welcome to this page!"
 ---
 
   <script src="/count/main.js"></script>
-  <count-db
+  
+  このサイトは<count-db
     db="you-count.k0ns10.workers.dev"
     domain="114514.cn"
     img="/count"
     img-type="webp"
     left
     right
-    width="50">カウンター</count-db>回閲覧されたよ！
+    width="50">カウンターを読み込み中！</count-db>回閲覧されたよ！
 
 
 奏音公式です～
