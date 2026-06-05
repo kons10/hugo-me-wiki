@@ -1,0 +1,3 @@
+[submodule "static/count"]
+	path = static/count
+	url = http://github.com/kons10/Nizi-Counter.git
