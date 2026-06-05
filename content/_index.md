@@ -2,6 +2,16 @@
 title: "Welcome to this page!"
 ---
 
+<script src="/count/main.js"></script>
+<count-db
+  db="you-count.k0ns10.workers.dev"
+  domain="114514.cn"
+  img="xxxxxx"
+  img-type="webp"
+  left
+  right
+  width="50"
+></count-db>
 
 奏音公式です～
 　メインページって何置けばいい？
