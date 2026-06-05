@@ -2,8 +2,7 @@
 title: "Welcome to this page!"
 ---
 
-  <link rel="preload" href="/count/main.js" as="script">
-  <script src="/count/main.js" type="module"></script>
+  <script src="/count/main.js"></script>
   <count-db
     db="you-count.k0ns10.workers.dev"
     domain="114514.cn"
