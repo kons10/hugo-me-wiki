@@ -1,6 +1,8 @@
 ---
 title: "Welcome to this page!"
 ---
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=cake,info,computer,android,devices,memory,stadia_controller">
 
   <script src="/count/main.js"></script>
   
