@@ -21,5 +21,5 @@ title: "Links"
 ### [![𝓢o𝓲c𝓱i](https://soichi-portfolio.soichi1208.workers.dev/header.svg)](https://soichi-portfolio.soichi1208.workers.dev/)
 Tor鯖を運営している、天子ちゃん大好きな人
 
-### [![一樹](hhttps://l-ituki8000.f5.si/images/slink.png)](https://l-ituki8000.f5.si/)
+### [![一樹](https://site.l-ituki8000.workers.dev/images/slink.png)](https://l-ituki8000.f5.si/)
 学タブの裏技の研究同胞
