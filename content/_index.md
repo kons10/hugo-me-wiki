@@ -45,7 +45,7 @@ Linuxやオープンソースに興味があって、環境いじったり小さ
 
 ### <md-icon>computer</md-icon> 主PC
 - OS:Windows 11 Pro With KSM
-- メモリ:Panram DDR4-2666 16GB×2枚
+- RAM:Panram DDR4-2666 16GB×2枚
 - SSD:WD Green M.2 SATA 2280 480GB
 - M/B:GIGABYTE A52M S2H
 - GPU:GALAXY GF PGTX750Ti-OC-LP/2GD5
