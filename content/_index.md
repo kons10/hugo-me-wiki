@@ -55,8 +55,8 @@ Linuxやオープンソースに興味があって、環境いじったり小さ
 - OS:Windows 11 Pro Education Digital lisence
 
 ### 📱 Mobile
-- 801FJ (Arrows U)−没収済
-- 602SO (Xperia XZs)−主手机
+- <md-icon>android</md-icon>801FJ (Arrows U)−没収済
+- <md-icon>android</md-icon>602SO (Xperia XZs)−主手机
 - iPhone 5s (DoCoMo)−最近使ってない
 
 ---
