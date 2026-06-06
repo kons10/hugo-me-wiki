@@ -31,11 +31,11 @@ title: "Welcome to this page!"
 ![icon](https://raw.githubusercontent.com/Linux-jam/Photo-Gallery/refs/heads/main/kons_10.jpg)
 
 学生 / 日本在住
-🎂 2月21日  
+<md-icon>cake</md-icon> 2月21日  
 
 ---
 
-## 🚀 About Me
+## <md-icon>info</md-icon> About Me
 プログラミングとアニメが好きな学生。  
 Linuxやオープンソースに興味があって、環境いじったり小さいプロジェクト作ったりしてる。
 
@@ -43,7 +43,7 @@ Linuxやオープンソースに興味があって、環境いじったり小さ
 
 ---
 
-## 🛠 環境・デバイス
+## <md-icon>devices</md-icon> 布陣
 
 ### 💻 Main PC
 - Windows 11  
