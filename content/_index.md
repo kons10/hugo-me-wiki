@@ -43,31 +43,21 @@ Linuxやオープンソースに興味があって、環境いじったり小さ
 
 ## <md-icon>devices</md-icon> 布陣
 
-### 💻 Main PC
-- Windows 11  
-- Ryzen 5 5600  
-- 32GB RAM  
-- GeForce 750 Ti  
+### <md-icon>computer</md-icon> 主PC
+- OS:Windows 11 Pro With KSM
+- メモリ:Panram DDR4-2666 16GB×2枚
+- SSD:WD Green M.2 SATA 2280 480GB
+- M/B:GIGABYTE A52M S2H
+- GPU:GALAXY GF PGTX750Ti-OC-LP/2GD5
+- Power:Antec NE550 Gold
+
+### <md-icon>computer</md-icon> 学Tab
+- OS:Windows 11 Pro Education Digital lisence
 
 ### 📱 Mobile
-- arrows U  
-
-### 🧩 System
-- Windows
-- Debian
-- Termux
-
----
-
-## 🛠 Tech Stack
-
-### OS
-- Windows
-- Linux（Debian系）
-
-### Hardware
-- AMD Ryzen
-- Intel（Celeronなど）
+- 801FJ (Arrows U)−没収済
+- 602SO (Xperia XZs)−主手机
+- iPhone 5s (DoCoMo)−最近使ってない
 
 ---
 
@@ -85,9 +75,3 @@ Linuxやオープンソースに興味があって、環境いじったり小さ
 - GitHubで小規模プロジェクト公開
 - 環境構築・最適化
 - いろんな技術の試行錯誤
-
----
-
-## 📌 メモ
-このページは Hugo で管理してるプロフィール。  
-気分で更新する。
