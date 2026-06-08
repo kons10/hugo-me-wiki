@@ -9,8 +9,8 @@ main a {
   border-bottom: 1px dashed #38bdf8;
   padding-bottom: 1px;
   transition: 0.15s ease;
-  position: relative;  /* 追加: md-focus-ring用 */
-  display: inline-block; /* 追加: フォーカスリングを正しく表示するため */
+  position: relative;
+  display: inline-block;
 }
 main a:hover {
   color: #7dd3fc;
@@ -32,8 +32,13 @@ main a:hover img {
   border-color: #38bdf8;
   box-shadow: 0 4px 10px rgba(56, 189, 248, .35);
 }
-/* オプション: キーボードフォーカス時のスタイル */
-main a:focus-visible {
+/* h2タグ内のリンクのフォーカスリングを無効化 */
+h2 a:focus-visible,
+h2 a:focus {
+  outline: none;
+}
+/* メインコンテンツのリンクのフォーカスリング（h2以外） */
+main a:not(h2 a):focus-visible {
   outline: 3px solid #38bdf8;
   outline-offset: 3px;
   border-radius: 8px;
