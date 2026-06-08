@@ -1,0 +1,21 @@
+{{/* layouts/partials/material-symbols.html */}}
+{{- /* Collect header md-icons from site navLinks */ -}}
+{{ $navLinks := .Site.Params.navLinks | default (slice) }}
+{{ $headerIcons := slice }}
+{{- range $navLinks }}
+  {{- with .mdIcon }}
+    {{ $headerIcons = $headerIcons | append . }}
+  {{- end }}
+{{- end }}
+
+{{- /* Collect page icons from front matter (e.g., icons: [ "memory", "person_heart" ]) */ -}}
+{{ $pageIcons := .Params.icons | default (slice) }}
+
+{{- /* Merge, unique, sort */ -}}
+{{ $all := union $headerIcons $pageIcons }}
+{{ if gt (len $all) 0 }}
+  {{ $sorted := sort $all }}
+  {{ $iconNames := delimit $sorted "," }}
+  {{ $base := "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=" }}
+  <link href="{{ printf "%s%s&display=swap" $base (urlquery $iconNames) }}" rel="stylesheet">
+{{ end }}
