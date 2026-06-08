@@ -1,6 +1,6 @@
 {{/* layouts/partials/material-symbols.html */}}
 
-{{- /* 1) ヘッダーの mdIcon を収集 */ -}}
+{{/* 1) ヘッダーの mdIcon を収集 */}}
 {{ $navLinks := .Site.Params.navLinks | default (slice) }}
 {{ $headerIcons := slice }}
 {{- range $navLinks }}
@@ -9,44 +9,28 @@
   {{- end }}
 {{- end }}
 
-{{- /* 2) front matter の icons 配列 */ -}}
+{{/* 2) front matter の icons 配列 */}}
 {{ $pageIcons := .Params.icons | default (slice) }}
 
-{{- /* 3) ページ本文からインライン表記を抽出する */ -}}
+{{/* 3) ページ本文から <md-icon>name</md-icon> を抽出（MWC3 形式） */}}
 {{ $content := .Content | default "" }}
-
-{{- /* md-icon タグ: <md-icon>name</md-icon> */ -}}
-{{ $mdMatches := findRE "<md-icon>([^<]+)</md-icon>" $content }}
+{{ $mdMatches := findRE "<md-icon[^>]*>\\s*([^<]+?)\\s*</md-icon>" $content }}
 {{ $mdExtracted := slice }}
 {{- range $mdMatches }}
-  {{ $name := replaceRE "^<md-icon>([^<]+)</md-icon>$" "$1" . }}
+  {{ $name := replaceRE "^<md-icon[^>]*>\\s*([^<]+?)\\s*</md-icon>$" "$1" . }}
   {{ $mdExtracted = $mdExtracted | append $name }}
 {{- end }}
 
-{{- /* span class="md-icon": <span class="md-icon">name</span> */ -}}
-{{ $spanMatches := findRE "<span[^>]*class=[\"'][^\"']*md-icon[^\"']*[\"'][^>]*>([^<]+)</span>" $content }}
-{{ $spanExtracted := slice }}
-{{- range $spanMatches }}
-  {{ $name := replaceRE "^<span[^>]*>([^<]+)</span>$" "$1" . }}
-  {{ $spanExtracted = $spanExtracted | append $name }}
-{{- end }}
-
-{{- /* data attribute 形式: <span data-md-icon="name"> */ -}}
-{{ $attrMatches := findRE "data-md-icon=[\"']([^\"']+)[\"']" $content }}
-{{ $attrExtracted := slice }}
-{{- range $attrMatches }}
-  {{ $name := replaceRE "^data-md-icon=[\"']([^\"']+)[\"']$" "$1" . }}
-  {{ $attrExtracted = $attrExtracted | append $name }}
-{{- end }}
-
-{{- /* 4) 全部まとめて小文字化、ユニーク化、ソート */ -}}
-{{ $all := union $headerIcons $pageIcons $mdExtracted $spanExtracted $attrExtracted }}
-{{- /* 小文字化 */ -}}
+{{/* 4) 全集合をまとめて小文字化・ユニーク化・ソート */}}
+{{ $all := union $headerIcons $pageIcons $mdExtracted }}
 {{ $lowered := slice }}
 {{- range $all }}
-  {{ $lowered = $lowered | append (lower .) }}
+  {{- if ne . "" }}
+    {{ $lowered = $lowered | append (lower .) }}
+  {{- end }}
 {{- end }}
 {{ $unique := uniq $lowered }}
+
 {{ if gt (len $unique) 0 }}
   {{ $sorted := sort $unique }}
   {{ $iconNames := delimit $sorted "," }}
