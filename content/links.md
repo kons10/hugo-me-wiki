@@ -2,8 +2,43 @@
 title: "Links"
 ---
 
-<style>main a{color:#38bdf8;text-decoration:none;border-bottom:1px dashed #38bdf8;padding-bottom:1px;transition:0.15s ease}main a:hover{color:#7dd3fc;border-bottom-color:#7dd3fc;filter:brightness(1.1)}main img{display:inline-block;max-width:200px;height:auto;border-radius:4px;border:1px solid #1f2937;background:#020617;transition:0.15s ease;box-shadow:0 2px 4px rgba(0,0,0,.25)}main a:hover img{transform:translateY(-1px);border-color:#38bdf8;box-shadow:0 4px 10px rgba(56,189,248,.35)}</style>
-
+<style>
+main a {
+  color: #38bdf8;
+  text-decoration: none;
+  border-bottom: 1px dashed #38bdf8;
+  padding-bottom: 1px;
+  transition: 0.15s ease;
+  position: relative;  /* 追加: md-focus-ring用 */
+  display: inline-block; /* 追加: フォーカスリングを正しく表示するため */
+}
+main a:hover {
+  color: #7dd3fc;
+  border-bottom-color: #7dd3fc;
+  filter: brightness(1.1);
+}
+main img {
+  display: inline-block;
+  max-width: 200px;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid #1f2937;
+  background: #020617;
+  transition: 0.15s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+}
+main a:hover img {
+  transform: translateY(-1px);
+  border-color: #38bdf8;
+  box-shadow: 0 4px 10px rgba(56, 189, 248, .35);
+}
+/* オプション: キーボードフォーカス時のスタイル */
+main a:focus-visible {
+  outline: 3px solid #38bdf8;
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+</style>
 
 ここにリンクを置いておく
 
