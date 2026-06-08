@@ -21,8 +21,14 @@
   {{ $mdExtracted = $mdExtracted | append $name }}
 {{- end }}
 
-{{/* 4) 全集合をまとめて小文字化・ユニーク化・ソート */}}
-{{ $all := union $headerIcons $pageIcons $mdExtracted }}
+{{/* 4) （必要なら他のパターンも追加） */}}
+{{/* 例: <span class="md-icon">name</span> を拾いたい場合は同様に findRE を追加 */}}
+
+{{/* 5) union を 2 引数ずつで適用して全集合を作る */}}
+{{ $all := union $headerIcons $pageIcons }}
+{{ $all = union $all $mdExtracted }}
+
+{{/* 6) 小文字化・ユニーク化・ソート */}}
 {{ $lowered := slice }}
 {{- range $all }}
   {{- if ne . "" }}
