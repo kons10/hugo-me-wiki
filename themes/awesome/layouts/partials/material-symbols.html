@@ -1,5 +1,6 @@
 {{/* layouts/partials/material-symbols.html */}}
-{{- /* Collect header md-icons from site navLinks */ -}}
+
+{{- /* 1) ヘッダーの mdIcon を収集 */ -}}
 {{ $navLinks := .Site.Params.navLinks | default (slice) }}
 {{ $headerIcons := slice }}
 {{- range $navLinks }}
@@ -8,13 +9,46 @@
   {{- end }}
 {{- end }}
 
-{{- /* Collect page icons from front matter (e.g., icons: [ "memory", "person_heart" ]) */ -}}
+{{- /* 2) front matter の icons 配列 */ -}}
 {{ $pageIcons := .Params.icons | default (slice) }}
 
-{{- /* Merge, unique, sort */ -}}
-{{ $all := union $headerIcons $pageIcons }}
-{{ if gt (len $all) 0 }}
-  {{ $sorted := sort $all }}
+{{- /* 3) ページ本文からインライン表記を抽出する */ -}}
+{{ $content := .Content | default "" }}
+
+{{- /* md-icon タグ: <md-icon>name</md-icon> */ -}}
+{{ $mdMatches := findRE "<md-icon>([^<]+)</md-icon>" $content }}
+{{ $mdExtracted := slice }}
+{{- range $mdMatches }}
+  {{ $name := replaceRE "^<md-icon>([^<]+)</md-icon>$" "$1" . }}
+  {{ $mdExtracted = $mdExtracted | append $name }}
+{{- end }}
+
+{{- /* span class="md-icon": <span class="md-icon">name</span> */ -}}
+{{ $spanMatches := findRE "<span[^>]*class=[\"'][^\"']*md-icon[^\"']*[\"'][^>]*>([^<]+)</span>" $content }}
+{{ $spanExtracted := slice }}
+{{- range $spanMatches }}
+  {{ $name := replaceRE "^<span[^>]*>([^<]+)</span>$" "$1" . }}
+  {{ $spanExtracted = $spanExtracted | append $name }}
+{{- end }}
+
+{{- /* data attribute 形式: <span data-md-icon="name"> */ -}}
+{{ $attrMatches := findRE "data-md-icon=[\"']([^\"']+)[\"']" $content }}
+{{ $attrExtracted := slice }}
+{{- range $attrMatches }}
+  {{ $name := replaceRE "^data-md-icon=[\"']([^\"']+)[\"']$" "$1" . }}
+  {{ $attrExtracted = $attrExtracted | append $name }}
+{{- end }}
+
+{{- /* 4) 全部まとめて小文字化、ユニーク化、ソート */ -}}
+{{ $all := union $headerIcons $pageIcons $mdExtracted $spanExtracted $attrExtracted }}
+{{- /* 小文字化 */ -}}
+{{ $lowered := slice }}
+{{- range $all }}
+  {{ $lowered = $lowered | append (lower .) }}
+{{- end }}
+{{ $unique := uniq $lowered }}
+{{ if gt (len $unique) 0 }}
+  {{ $sorted := sort $unique }}
   {{ $iconNames := delimit $sorted "," }}
   {{ $base := "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&icon_names=" }}
   <link href="{{ printf "%s%s&display=swap" $base (urlquery $iconNames) }}" rel="stylesheet">
