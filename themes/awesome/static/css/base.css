@@ -102,10 +102,14 @@ main {
 }
 
 /* 各リンクに対してこれが重要 */
-main a {
-  position: relative;
-  display: inline-block; /* これがないとRippleのサイズが親のパディングに引きずられる */
-  overflow: hidden;      /* Rippleを枠内に留める */
+main a.container {
+  display: inline-block; /* インラインブロックで要素として認識させる */
+  position: relative;    /* Rippleの基準点 */
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  /* 必要であればここでサイズを明示的に指定 */
+  padding: 4px;          /* クリック範囲を少し広げると押しやすいよ */
 }
 
 img {
