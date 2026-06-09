@@ -4,8 +4,8 @@ title: "Links"
 
 <style>
 main img {
-  max-width: 250px
-  }
+  max-width: 250px;
+ }
 </style>
 
 
