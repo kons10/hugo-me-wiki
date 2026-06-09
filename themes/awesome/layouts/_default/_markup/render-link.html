@@ -1,6 +1,24 @@
 {{- /* layouts/_default/_markup/render-link.html */ -}}
-<a href="{{ .Destination }}" class="container" {{ with .Title }}title="{{ . }}"{{ end }}>
-  {{ .Text | safeHTML }}
-  <md-focus-ring style="--md-focus-ring-shape:8px;"></md-focus-ring>
-  <md-ripple></md-ripple>
-</a>
+{{- $isLinksPage := eq .Page.File.Path "links.md" -}}
+
+{{- if $isLinksPage -}}
+  {{- /* links.md用：buttonコンポーネントとして出力 */ -}}
+  <style>
+    :root {
+      --md-outlined-button-container-shape: 0px;
+      --md-outlined-button-label-text-font: system-ui;
+      --md-sys-color-primary: #006A6A;
+      --md-sys-color-outline: #6F7979;
+    }
+  </style>
+  <md-outlined-button href="{{ .Destination }}" {{ with .Title }}title="{{ . }}"{{ end }}>
+    {{ .Text | safeHTML }}
+  </md-outlined-button>
+{{- else -}}
+  {{- /* それ以外のページは通常のaタグ */ -}}
+  <a href="{{ .Destination }}" class="container" {{ with .Title }}title="{{ . }}"{{ end }}>
+    {{ .Text | safeHTML }}
+    <md-focus-ring style="--md-focus-ring-shape:8px;"></md-focus-ring>
+    <md-ripple></md-ripple>
+  </a>
+{{- end -}}
