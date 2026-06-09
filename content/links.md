@@ -52,7 +52,7 @@ main a:not(h2 a):focus-visible {
 ### [![ちくにざき](https://i.imgur.com/JEP1xa8.webp)<md-focus-ring style="--md-focus-ring-shape: 8px;"></md-focus-ring>](https://157.f5.si/)
 自作のPHPエンジン作ってる凄い人
 
-### [taitai2661<md-focus-ring style="--md-focus-ring-shape: 8px;"></md-focus-ring>](https://taitai2661dayo.pages.dev/)
+### [taitai2661<md-focus-ring style="--md-focus-ring-shape: 8px;"></md-focus-ring>](https://ta26.top/)
 最近レート制限のない超軽量AI作ったらしい
 
 ### [![風止渚のホームページ](https://i.imgur.com/94ifNlf.webp)<md-focus-ring style="--md-focus-ring-shape: 8px;"></md-focus-ring>](https://kzng.f5.si/)
