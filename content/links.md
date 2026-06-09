@@ -13,10 +13,6 @@ main img {
   max-width: 250px;
   height: auto;
 }
-main a:hover img {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 10px rgba(56, 189, 248, .35);
-}
 /* h2タグ内のリンクのフォーカスリングを無効化 */
 h2 a:focus-visible,
 h2 a:focus {
