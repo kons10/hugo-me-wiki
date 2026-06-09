@@ -1,28 +1,24 @@
----
-title: "Links"
----
+{{- /* layouts/_default/_markup/render-link.html */ -}}
+{{- /* リンクテキストの中にimgタグがあるか判定 */ -}}
+{{- $isImageLink := findRE "<img" .Text -}}
 
-<style>
-main img {
-  max-width: 250px;
- }
-</style>
-
-ここにリンクを置いておく
-
-## 相互リンク
-
-### [![ちくにざき](https://i.imgur.com/JEP1xa8.webp)](https://157.f5.si/)
-自作のPHPエンジン作ってる凄い人
-
-### [taitai2661](https://ta26.top/)
-最近レート制限のない超軽量AI作ったらしい
-
-### [![風止渚のホームページ](https://i.imgur.com/94ifNlf.webp)](https://kzng.f5.si/)
-一日にやってることが多い高専の人
-
-### [![𝓢o𝓲c𝓱i](https://soichi-portfolio.soichi1208.workers.dev/header.svg)](https://soichi-portfolio.soichi1208.workers.dev/)
-Tor鯖を運営している、天子ちゃん大好きな人
-
-### [![一樹](https://site.l-ituki8000.workers.dev/images/slink.png)](https://l-ituki8000.f5.si/)
-学タブの裏技の研究同胞
+{{- if .Page.Params.use_button_links -}}
+  {{- if $isImageLink -}}
+    {{- /* 画像リンクの場合 */ -}}
+    <md-outlined-button href="{{ .Destination }}" class="image-link">
+      {{ .Text | safeHTML }}
+    </md-outlined-button>
+  {{- else -}}
+    {{- /* 通常テキストリンクの場合 */ -}}
+    <md-outlined-button href="{{ .Destination }}">
+      {{ .Text | safeHTML }}
+    </md-outlined-button>
+  {{- end -}}
+{{- else -}}
+  {{- /* 通常のページ用 */ -}}
+  <a href="{{ .Destination }}" class="container">
+    {{ .Text | safeHTML }}
+    <md-focus-ring style="--md-focus-ring-shape:8px;"></md-focus-ring>
+    <md-ripple></md-ripple>
+  </a>
+{{- end -}}
