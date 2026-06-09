@@ -4,19 +4,44 @@ title: "Links"
 
 <style>
 main a {
+  color: #38bdf8;
   text-decoration: none;
+  border-bottom: 1px dashed #38bdf8;
+  padding-bottom: 1px;
+  transition: 0.15s ease;
   position: relative;
   display: inline-block;
 }
+main a:hover {
+  color: #7dd3fc;
+  border-bottom-color: #7dd3fc;
+  filter: brightness(1.1);
+}
 main img {
   display: inline-block;
-  max-width: 250px;
+  max-width: 200px;
   height: auto;
+  border-radius: 4px;
+  border: 1px solid #1f2937;
+  background: #020617;
+  transition: 0.15s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+}
+main a:hover img {
+  transform: translateY(-1px);
+  border-color: #38bdf8;
+  box-shadow: 0 4px 10px rgba(56, 189, 248, .35);
 }
 /* h2タグ内のリンクのフォーカスリングを無効化 */
 h2 a:focus-visible,
 h2 a:focus {
   outline: none;
+}
+/* メインコンテンツのリンクのフォーカスリング（h2以外） */
+main a:not(h2 a):focus-visible {
+  outline: 3px solid #38bdf8;
+  outline-offset: 3px;
+  border-radius: 8px;
 }
 </style>
 
@@ -27,14 +52,14 @@ h2 a:focus {
 ### [![ちくにざき](https://i.imgur.com/JEP1xa8.webp)<md-focus-ring style="--md-focus-ring-shape: 8px;"></md-focus-ring>](https://157.f5.si/)
 自作のPHPエンジン作ってる凄い人
 
-### [taitai2661<md-focus-ring style="--md-focus-ring-shape: 8px;"></md-focus-ring>](https://taitai2661dayo.pages.dev/)
+### [taitai2661<md-focus-ring style="--md-focus-ring-shape: 8px;"></md-focus-ring>](https://ta26.top/)
 最近レート制限のない超軽量AI作ったらしい
 
-### [![風止渚のホームページ<md-focus-ring style="--md-focus-ring-shape: 8px;"></md-focus-ring>](https://i.imgur.com/94ifNlf.webp)](https://kzng.f5.si/)
+### [![風止渚のホームページ](https://i.imgur.com/94ifNlf.webp)<md-focus-ring style="--md-focus-ring-shape: 8px;"></md-focus-ring>](https://kzng.f5.si/)
 一日にやってることが多い高専の人
 
-### [![𝓢o𝓲c𝓱i<md-focus-ring style="--md-focus-ring-shape: 8px;"></md-focus-ring>](https://soichi-portfolio.soichi1208.workers.dev/header.svg)](https://soichi-portfolio.soichi1208.workers.dev/)
+### [![𝓢o𝓲c𝓱i](https://soichi-portfolio.soichi1208.workers.dev/header.svg)<md-focus-ring style="--md-focus-ring-shape: 8px;"></md-focus-ring>](https://soichi-portfolio.soichi1208.workers.dev/)
 Tor鯖を運営している、天子ちゃん大好きな人
 
-### [![一樹<md-focus-ring style="--md-focus-ring-shape: 8px;"></md-focus-ring>](https://site.l-ituki8000.workers.dev/images/slink.png)](https://l-ituki8000.f5.si/)
+### [![一樹](https://site.l-ituki8000.workers.dev/images/slink.png)<md-focus-ring style="--md-focus-ring-shape: 8px;"></md-focus-ring>](https://l-ituki8000.f5.si/)
 学タブの裏技の研究同胞
