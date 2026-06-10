@@ -135,6 +135,17 @@ a:hover {
   color: var(--md-sys-color-primary, rgb(0 45 5));
 }
 
+/* 画像リンクのボタンは枠線を消してスッキリさせる */
+md-outlined-button.image-link {
+  --md-outlined-button-outline-color: transparent;
+  padding: 0;
+}
+
+/* 画像がボタンからはみ出さないように */
+md-outlined-button.image-link img {
+  display: block;
+  max-width: 250px;
+}
 
 
 @media (max-width: 700px) {
