@@ -92,12 +92,33 @@ main {
   padding: 1.5em 1.5em 2.5em;
   border-radius: 16px;
   color: var(--md-sys-color-on-surface, rgb(25 28 24));
-  background: var(--md-sys-color-surface-container, rgb(237 239 231));
+  background:
+    /* ▼ 画像＋暗さを1レイヤーにまとめる */
+    linear-gradient(
+      rgba(0, 0, 0, 0.50),
+      rgba(0, 0, 0, 0.50)
+    ),
+    url("https://embed.pixiv.net/decorate.php?illust_id=85669957&mdate=1605360435")
+      center top / contain repeat-y,
+    /* ▼ フォールバックの元の背景色 */
+    var(--md-sys-color-surface-container, rgb(237 239 231));
   box-shadow: 0 2px 12px color-mix(in srgb, var(--md-sys-color-shadow, rgb(0 0 0)) 24%, transparent);
   text-align: center;
   width: 100%;
   box-sizing: border-box;
   font-family: inherit;
+  position: relative;
+}
+
+/* 各リンクに対してこれが重要 */
+main a.container {
+  display: inline-block; /* インラインブロックで要素として認識させる */
+  position: relative;    /* Rippleの基準点 */
+  overflow: hidden;
+  text-decoration: none;
+  cursor: pointer;
+  /* 必要であればここでサイズを明示的に指定 */
+  padding: 4px;          /* クリック範囲を少し広げると押しやすいよ */
 }
 
 img {
@@ -113,6 +134,21 @@ a {
 a:hover {
   color: var(--md-sys-color-primary, rgb(0 45 5));
 }
+
+/* 画像リンクのボタンは枠線を消してスッキリさせる */
+md-outlined-button.image-link {
+  --md-outlined-button-outline-color: transparent;
+  --md-outlined-button-container-shape: 5px;
+  padding: 0;
+}
+
+/* 画像がボタンからはみ出さないように */
+md-outlined-button.image-link img {
+  display: block;
+  border-radius: 5px;
+  max-width: 250px;
+}
+
 
 @media (max-width: 700px) {
   main { margin-top: 44px; }

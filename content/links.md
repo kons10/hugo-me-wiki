@@ -1,5 +1,6 @@
 ---
 title: "Links"
+use_button_links: true
 ---
 
 <style>
