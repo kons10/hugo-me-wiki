@@ -93,17 +93,15 @@ main {
   border-radius: 16px;
   color: var(--md-sys-color-on-surface, rgb(25 28 24));
   background:
-    /* 1. 背景画像（横幅ぴったり + 縦リピート） */
-    url("https://embed.pixiv.net/decorate.php?illust_id=85669957&mdate=1605360435")
-      center top / contain repeat-y,
-
-    /* 2. 暗さレイヤー（画像の上に乗る） */
+    /* ▼ 画像＋暗さを1レイヤーにまとめる */
     linear-gradient(
       rgba(0, 0, 0, 0.25),
       rgba(0, 0, 0, 0.25)
     ),
+    url("https://embed.pixiv.net/decorate.php?illust_id=85669957&mdate=1605360435")
+      center top / contain repeat-y,
 
-    /* 3. フォールバックの元の背景色 */
+    /* ▼ フォールバックの元の背景色 */
     var(--md-sys-color-surface-container, rgb(237 239 231));
   box-shadow: 0 2px 12px color-mix(in srgb, var(--md-sys-color-shadow, rgb(0 0 0)) 24%, transparent);
   text-align: center;
