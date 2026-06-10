@@ -78,7 +78,10 @@ header {
    ========================= */
 body {
   min-height: 100vh;
-  background: var(--md-sys-color-background, rgb(248 250 242));
+  background:
+    url("https://embed.pixiv.net/decorate.php?illust_id=85669957&mdate=1605360435")
+      center/cover no-repeat,
+    var(--md-sys-color-surface-container, rgb(237 239 231));
   color: var(--md-sys-color-on-background, rgb(25 28 24));
   box-sizing: border-box;
   display: flex;
