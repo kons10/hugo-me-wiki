@@ -138,13 +138,14 @@ a:hover {
 /* 画像リンクのボタンは枠線を消してスッキリさせる */
 md-outlined-button.image-link {
   --md-outlined-button-outline-color: transparent;
-  --md-filled-button-container-shape: 0px;
+  --md-outlined-button-container-shape: 5px;
   padding: 0;
 }
 
 /* 画像がボタンからはみ出さないように */
 md-outlined-button.image-link img {
   display: block;
+  border-radius: 5px;
   max-width: 250px;
 }
 
