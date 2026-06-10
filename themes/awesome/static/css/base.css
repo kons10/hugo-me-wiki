@@ -138,7 +138,7 @@ a:hover {
 /* 画像リンクのボタンは枠線を消してスッキリさせる */
 md-outlined-button.image-link {
   --md-outlined-button-outline-color: transparent;
-  --md-filled-button-container-shape: 5px;
+  --md-filled-button-container-shape: 0px;
   padding: 0;
 }
 
