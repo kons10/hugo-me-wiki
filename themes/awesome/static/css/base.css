@@ -95,12 +95,11 @@ main {
   background:
     /* ▼ 画像＋暗さを1レイヤーにまとめる */
     linear-gradient(
-      rgba(0, 0, 0, 0.25),
-      rgba(0, 0, 0, 0.25)
+      rgba(0, 0, 0, 0.50),
+      rgba(0, 0, 0, 0.50)
     ),
     url("https://embed.pixiv.net/decorate.php?illust_id=85669957&mdate=1605360435")
       center top / contain repeat-y,
-
     /* ▼ フォールバックの元の背景色 */
     var(--md-sys-color-surface-container, rgb(237 239 231));
   box-shadow: 0 2px 12px color-mix(in srgb, var(--md-sys-color-shadow, rgb(0 0 0)) 24%, transparent);
