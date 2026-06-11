@@ -11,7 +11,7 @@ title: "Welcome to this page!"
     img-type="webp"
     left
     right
-    width="80">カウンターを読み込み中！</count-db>回閲覧されたよ！
+    width="80">カウンターを読み込み中！？</count-db>回閲覧されたよ！
 
 
 奏音公式です～
