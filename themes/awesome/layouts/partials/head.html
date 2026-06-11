@@ -9,7 +9,11 @@
   <link rel="preload" href="/js/mwc.js" as="script" crossorigin="anonymous">
   <script src="/js/mwc.js" crossorigin="anonymous" defer></script>
   {{ if .IsHome }}
-    <script src="{{ "count/main.js" | relURL }}"></script>
+    {{ $js := resources.Get "count/main.js" }}
+    {{ if $js }}
+      {{ $js = $js | minify | fingerprint }}
+      <script src="{{ $js.RelPermalink }}" crossorigin="{{ $js.Data.Integrity }}"></script>
+    {{ end }}
   {{ end }}
   {{ partial "material-symbols.html" . }}
 </head>
