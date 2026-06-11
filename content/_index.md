@@ -26,15 +26,15 @@ title: "Welcome to this page!"
 
 # 👋 奏音 / Kanon (@kons10)
 
-![icon](https://raw.githubusercontent.com/Linux-jam/Photo-Gallery/refs/heads/main/kons_10.jpg)
+![icon](https://esm.sh/gh/Linux-jam/Photo-Gallery/z0uy1n.webp)
 
 学生 / 日本在住
-<md-icon>cake</md-icon> 2月21日  
+<md-icon>cake</md-icon> 2月21日
 
 ---
 
 ## <md-icon>info</md-icon> About Me
-プログラミングとアニメが好きな学生。  
+プログラミングとアニメが好きな学生。
 Linuxやオープンソースに興味があって、環境いじったり小さいプロジェクト作ったりしてる。
 
 あと、地味にいろいろ試すのが好き（裏技とか構成とか）。
