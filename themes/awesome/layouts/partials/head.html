@@ -8,14 +8,6 @@
   <link rel="stylesheet" media="(prefers-color-scheme: light)" href="{{ "css/light.css" | relURL }}" crossorigin="anonymous">
   <link rel="preload" href="/js/mwc.js" as="script" crossorigin="anonymous">
   <script src="/js/mwc.js" crossorigin="anonymous" defer></script>
-  {{ if .IsHome }}
-    {{ $js := resources.Get "count/main.js" }}
-    {{ if $js }}
-      {{ $js = $js | minify | fingerprint }}
-      <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" crossorigin="anonymous" defer></script>
-  {{ else }}
-      <!-- count/main.js not found in assets/ -->
-  {{ end }}
-{{ end }}
+  <script src="https://esm.sh/gh/kons10/Nizi-Counter/main.js" defer></script>
   {{ partial "material-symbols.html" . }}
 </head>
