@@ -3,7 +3,7 @@
     <div class="footer-social-links">
       {{- range .Site.Params.socialLinks }}
       {{- if .url }}
-      <md-icon-button href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .title }}">
+      <md-icon-button href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .title }}" aria-label="{{ .title }}">
         <img src="{{ (printf "svg/%s" .icon) | relURL }}" alt="{{ .alt }}" width="24" height="24">
       </md-icon-button>
       {{- end }}
@@ -24,7 +24,7 @@
       <p class="footer-license">
         このサイトの内容は
         {{ with $.Site.Params.licenseURL }}
-          <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer" aria-label="License: {{ $.Site.Params.license }}">
             {{ $.Site.Params.license }}
           </a>
         {{ else }}
@@ -40,7 +40,7 @@
     <div class="footer-social-links" style="display:flex; justify-content:center; flex-wrap:wrap; gap:20px; margin-bottom:20px;">
       {{- range .Site.Params.socialLinks }}
       {{- if .url }}
-      <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .title }}">
+      <a href="{{ .url }}" target="_blank" rel="noopener noreferrer" title="{{ .title }}" aria-label="{{ .title }}">
         {{- if .mdIcon }}
         <md-icon>{{ .mdIcon }}</md-icon>
         {{- else }}
