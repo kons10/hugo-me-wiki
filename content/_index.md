@@ -2,7 +2,9 @@
 title: "Welcome to this page!"
 ---
 
-  <script src="/count/main.js"></script>
+
+{{ $js := resources.Get "count/main.js" | minify | fingerprint }}
+<script src="{{ $js.Permalink }}"></script>
   
   このサイトは<count-db
     db="you-count.k0ns10.workers.dev"
