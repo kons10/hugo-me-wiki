@@ -4,7 +4,7 @@ title: "Welcome to this page!"
 
   このサイトは<count-db
     db="you-count.k0ns10.workers.dev"
-    domain="114514.cn"
+    domain="https://esm.sh/kons10/Nizi-Counter"
     img="/count"
     img-type="webp"
     left
