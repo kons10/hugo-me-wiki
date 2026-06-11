@@ -8,5 +8,8 @@
   <link rel="stylesheet" media="(prefers-color-scheme: light)" href="{{ "css/light.css" | relURL }}" crossorigin="anonymous">
   <link rel="preload" href="/js/mwc.js" as="script" crossorigin="anonymous">
   <script src="/js/mwc.js" crossorigin="anonymous" defer></script>
+  {{ if .IsHome }}
+    <script src="{{ "count/main.js" | relURL }}"></script>
+  {{ end }}
   {{ partial "material-symbols.html" . }}
 </head>
