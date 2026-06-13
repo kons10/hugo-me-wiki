@@ -1,22 +1,28 @@
 {{- /* layouts/_default/_markup/render-link.html */ -}}
-{{- /* リンクテキストの中にimgタグがあるか判定 */ -}}
 {{- $isImageLink := findRE "<img" .Text -}}
 
 {{- if .Page.Params.use_button_links -}}
   {{- if $isImageLink -}}
-    {{- /* 画像リンクの場合 */ -}}
-    <md-outlined-button href="{{ .Destination }}" class="image-link">
-      {{ .Text | safeHTML }}
-    </md-outlined-button>
+    <md-elevated-button href="{{ .Destination | safeURL }}" class="banner-link-card">
+      <span class="banner-link-card__inner">
+        <span class="banner-link-card__media">
+          {{ .Text | safeHTML }}
+        </span>
+        <span class="banner-link-card__body">
+          <span class="banner-link-card__title">{{ .PlainText }}</span>
+          {{- with .Title }}
+            <span class="banner-link-card__text">{{ . }}</span>
+          {{- end }}
+        </span>
+      </span>
+    </md-elevated-button>
   {{- else -}}
-    {{- /* 通常テキストリンクの場合 */ -}}
-    <md-outlined-button href="{{ .Destination }}">
+    <md-outlined-button href="{{ .Destination | safeURL }}" title="{{ .Title }}">
       {{ .Text | safeHTML }}
     </md-outlined-button>
   {{- end -}}
 {{- else -}}
-  {{- /* 通常のページ用 */ -}}
-  <a href="{{ .Destination }}" class="container">
+  <a href="{{ .Destination | safeURL }}" class="container"{{ with .Title }} title="{{ . }}"{{ end }}>
     {{ .Text | safeHTML }}
     <md-focus-ring style="--md-focus-ring-shape:8px;"></md-focus-ring>
     <md-ripple></md-ripple>
