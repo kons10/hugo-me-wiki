@@ -135,18 +135,110 @@ a:hover {
   color: var(--md-sys-color-primary, rgb(0 45 5));
 }
 
-/* 画像リンクのボタンは枠線を消してスッキリさせる */
-md-outlined-button.image-link {
-  --md-outlined-button-outline-color: transparent;
-  --md-outlined-button-container-shape: 5px;
-  padding: 0;
+/* banner付きlinkはMarkdownだけで管理し、render-link.htmlでMWC card化 */
+main p:has(md-elevated-button.banner-link-card) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  width: min(1040px, 100%);
+  margin: 1.25rem auto 0;
 }
 
-/* 画像がボタンからはみ出さないように */
-md-outlined-button.image-link img {
+md-elevated-button.banner-link-card {
+  width: 100%;
+  min-width: 0;
+  --md-elevated-button-container-height: auto;
+  --md-elevated-button-leading-space: 0;
+  --md-elevated-button-trailing-space: 0;
+  --md-elevated-button-container-shape: 24px;
+  --md-elevated-button-container-color: color-mix(in srgb, var(--md-sys-color-surface-container-high, rgb(231 233 225)) 90%, transparent);
+  --md-elevated-button-container-elevation: 1;
+  --md-elevated-button-hover-container-elevation: 2;
+  --md-elevated-button-focus-container-elevation: 2;
+  --md-elevated-button-pressed-container-elevation: 1;
+  --md-elevated-button-label-text-color: var(--md-sys-color-on-surface, rgb(25 28 24));
+  --md-elevated-button-hover-label-text-color: var(--md-sys-color-on-surface, rgb(25 28 24));
+  --md-elevated-button-focus-label-text-color: var(--md-sys-color-on-surface, rgb(25 28 24));
+  --md-elevated-button-pressed-label-text-color: var(--md-sys-color-on-surface, rgb(25 28 24));
+  --md-elevated-button-label-text-size: 1rem;
+  --md-elevated-button-label-text-line-height: 1.4;
+  --md-elevated-button-label-text-weight: 700;
+}
+
+.banner-link-card__inner {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant, rgb(193 201 187)) 72%, transparent);
+  border-radius: 24px;
+  text-align: left;
+}
+
+md-elevated-button.banner-link-card:hover .banner-link-card__inner,
+md-elevated-button.banner-link-card:focus-within .banner-link-card__inner {
+  border-color: color-mix(in srgb, var(--md-sys-color-primary, rgb(0 45 5)) 70%, transparent);
+}
+
+.banner-link-card__media {
+  display: grid;
+  min-height: 104px;
+  padding: 0.85rem;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--md-sys-color-primary-container, rgb(185 244 174)) 22%, transparent), transparent 55%),
+    color-mix(in srgb, var(--md-sys-color-surface-container-highest, rgb(225 227 220)) 92%, transparent);
+  place-items: center;
+}
+
+.banner-link-card__media img {
   display: block;
-  border-radius: 5px;
-  max-width: 250px;
+  width: min(100%, 250px);
+  max-height: 92px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.banner-link-card__media img[src*="google.com/s2/favicons"] {
+  width: 64px;
+  height: 64px;
+  max-height: none;
+  padding: 0.65rem;
+  border-radius: 18px;
+  background: var(--md-sys-color-surface, rgb(248 250 242));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--md-sys-color-outline-variant, rgb(193 201 187)) 70%, transparent);
+}
+
+.banner-link-card__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding: 1rem;
+}
+
+.banner-link-card__title {
+  color: var(--md-sys-color-on-surface, rgb(25 28 24));
+  font-weight: 700;
+}
+
+.banner-link-card__text {
+  color: var(--md-sys-color-on-surface-variant, rgb(65 73 63));
+  font-size: 0.92rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+@media (max-width: 640px) {
+  main p:has(md-elevated-button.banner-link-card) {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+
+  .banner-link-card__media {
+    min-height: 96px;
+    padding: 0.75rem;
+  }
 }
 
 
