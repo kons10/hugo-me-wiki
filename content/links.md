@@ -15,4 +15,4 @@ bannerが増えても見やすいよう、Markdown linkだけで管理。
 [![𝓢o𝓲c𝓱i](https://soichi-portfolio.soichi1208.workers.dev/header.svg)](https://soichi-portfolio.soichi1208.workers.dev/ "Tor鯖を運営している、天子ちゃん大好きな人")
 [![一樹](https://site.l-ituki8000.workers.dev/images/slink.png)](https://l-ituki8000.f5.si/ "学タブの裏技の研究同胞")
 [![Smirnova](https://mahiro.uk/favicon.ico)](https://mahiro.uk/ "デザインのいいサイトを作ってる学生さん")
-[![雨落](https://avatars.githubusercontent.com/u/53731501)](https://blog.yuluo.dev/ "JavaScript得意なGitHubたくさんやってる人")
+[![秋雨落](https://avatars.githubusercontent.com/u/53731501)](https://blog.yuluo.dev/ "JavaScript得意なGitHubたくさんやってる人")
