@@ -178,6 +178,7 @@ md-elevated-button.banner-link-card {
   text-align: left;
   white-space: normal;
   text-wrap: wrap;
+  box-sizing: border-box;
 }
 
 md-elevated-button.banner-link-card:hover .banner-link-card__inner,
