@@ -26,7 +26,7 @@ title: "Welcome to this page!"
 
 ![icon](https://esm.sh/gh/Linux-jam/Photo-Gallery/z0uy1n.webp)
 
-学生 / 日本在住
+<md-icon>student</md-icon> 学生 / <md-icon>japanese_flag</md-icon> 日本在住
 <md-icon>cake</md-icon> 2月21日
 
 ---
@@ -39,9 +39,9 @@ Linuxやオープンソースに興味があって、環境いじったり小さ
 
 ---
 
-## <md-icon>devices</md-icon> 布陣
+## <md-icon>devices_other</md-icon> 布陣
 
-### <md-icon>computer</md-icon> 主PC
+### <md-icon>desktop_windows</md-icon> 主PC
 - OS:Windows 11 Pro With KSM
 - RAM:Panram DDR4-2666 16GB×2枚
 - SSD:WD Green M.2 SATA 2280 480GB
@@ -49,13 +49,17 @@ Linuxやオープンソースに興味があって、環境いじったり小さ
 - GPU:GALAXY GF PGTX750Ti-OC-LP/2GD5
 - Power:Antec NE550 Gold
 
-### <md-icon>computer</md-icon> 学Tab
+### <md-icon>laptop_windows</md-icon> 学Tab
 - OS:Windows 11 Pro Education Digital lisence
+- CPU:Intel(R) Pentium(R) Silver N6000 @ 1.10GHz (1.11 GHz)
+- 
 
-### 📱 Mobile
-- <md-icon>android</md-icon>801FJ (Arrows U)−没収済
-- <md-icon>android</md-icon>602SO (Xperia XZs)−主手机
-- <md-icon>ios</md-icon>iPhone 5s (DoCoMo)−最近使ってない
+### <md-icon>mobile_2</md-icon> Mobile
+- <md-icon>adb</md-icon> 801FJ (Arrows U ADB済)−没収済
+- <md-icon>android</md-icon> 801FJ (Arrows U 未ADB)−没収済
+- <md-icon>android</md-icon> 602SO (Xperia XZs)−没収済
+- <md-icon>android</md-icon> LG-D821 (LG Nexus 5)-最近使ってない
+- <md-icon>ios</md-icon> iPhone 5s (DoCoMo)−最近使ってない
 
 ---
 
