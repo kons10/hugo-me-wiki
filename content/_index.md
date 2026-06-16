@@ -26,7 +26,7 @@ title: "Welcome to this page!"
 
 ![icon](https://esm.sh/gh/Linux-jam/Photo-Gallery/z0uy1n.webp)
 
-<md-icon>student</md-icon> 学生 / <md-icon>japanese_flag</md-icon> 日本在住
+<md-icon>school</md-icon> 学生 / <md-icon>japanese_flag</md-icon> 日本在住
 <md-icon>cake</md-icon> 2月21日
 
 ---
@@ -52,7 +52,7 @@ Linuxやオープンソースに興味があって、環境いじったり小さ
 ### <md-icon>laptop_windows</md-icon> 学Tab
 - OS:Windows 11 Pro Education Digital lisence
 - CPU:Intel(R) Pentium(R) Silver N6000 @ 1.10GHz (1.11 GHz)
-- 
+- RAM:8GB RAM
 
 ### <md-icon>mobile_2</md-icon> Mobile
 - <md-icon>adb</md-icon> 801FJ (Arrows U ADB済)−没収済
