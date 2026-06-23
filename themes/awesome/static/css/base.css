@@ -337,10 +337,12 @@ footer.footer-main {
     background: var(--md-sys-color-secondary-fixed, rgb(209 233 201));
   }
   .footer-social-links img {
-    filter: brightness(0) saturate(100%);
+    /* 白→黒→マテリアルプライマリカラー(緑系) */
+    filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(50deg) saturate(200%);
   }
   .footer-social-links a:hover img {
-    filter: brightness(0) saturate(100%);
+    /* ホバー時はより鮮やかに */
+    filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(50deg) saturate(300%) brightness(1.1);
   }
 }
 
@@ -352,10 +354,12 @@ footer.footer-main {
     background: var(--md-sys-color-secondary-fixed, rgb(209 233 201));
   }
   .footer-social-links img {
-    filter: brightness(0) saturate(100%);
+    /* 白→黒→マテリアルプライマリカラー(緑系) */
+    filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(50deg) saturate(200%);
   }
   .footer-social-links a:hover img {
-    filter: brightness(0) saturate(100%);
+    /* ホバー時はより鮮やかに */
+    filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(50deg) saturate(300%) brightness(1.1);
   }
 }
 
