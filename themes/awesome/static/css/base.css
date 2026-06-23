@@ -337,12 +337,12 @@ footer.footer-main {
     background: var(--md-sys-color-secondary-fixed, rgb(209 233 201));
   }
   .footer-social-links img {
-    /* 白→黒→マテリアルプライマリカラー(緑系) */
-    filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(50deg) saturate(200%);
+    /* 白→黒→マテリアルプライマリカラー(緑 #006E1C 相当) */
+    filter: brightness(0) saturate(100%) invert(41%) sepia(93%) saturate(748%) hue-rotate(87deg) brightness(98%) contrast(103%);
   }
   .footer-social-links a:hover img {
-    /* ホバー時はより鮮やかに */
-    filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(50deg) saturate(300%) brightness(1.1);
+    /* ホバー時はより明るく鮮やかに */
+    filter: brightness(0) saturate(100%) invert(68%) sepia(39%) saturate(638%) hue-rotate(87deg) brightness(105%) contrast(102%);
   }
 }
 
@@ -354,12 +354,12 @@ footer.footer-main {
     background: var(--md-sys-color-secondary-fixed, rgb(209 233 201));
   }
   .footer-social-links img {
-    /* 白→黒→マテリアルプライマリカラー(緑系) */
-    filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(50deg) saturate(200%);
+    /* 白→黒→マテリアルプライマリカラー(緑 #006E1C 相当) */
+    filter: brightness(0) saturate(100%) invert(41%) sepia(93%) saturate(748%) hue-rotate(87deg) brightness(98%) contrast(103%);
   }
   .footer-social-links a:hover img {
-    /* ホバー時はより鮮やかに */
-    filter: brightness(0) saturate(100%) sepia(100%) hue-rotate(50deg) saturate(300%) brightness(1.1);
+    /* ホバー時はより明るく鮮やかに */
+    filter: brightness(0) saturate(100%) invert(68%) sepia(39%) saturate(638%) hue-rotate(87deg) brightness(105%) contrast(102%);
   }
 }
 
