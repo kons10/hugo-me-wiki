@@ -32,19 +32,19 @@ __pycache__/
 coverage/
 htmlcov/
 
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.swo
+
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
 # System files
 .DS_Store
 Thumbs.db
-
-# Logs and temp files
-*.log
-*.tmp
 
 # Compressed files
 *.zip
@@ -73,8 +73,5 @@ Thumbs.db
 # Gradle
 .gradle/
 
-# Julia
-julia-*/
-
-# Zig
-zig*/
+# Images (not ignored as per rule 8)
+# .png, .jpg, .jpeg, .bmp, .gif, .webm files are not ignored

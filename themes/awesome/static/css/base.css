@@ -93,14 +93,8 @@ main {
   border-radius: 16px;
   color: var(--md-sys-color-on-surface, rgb(25 28 24));
   background:
-    /* ▼ 画像＋ブラーを1レイヤーにまとめる */
-    linear-gradient(
-      var(--md-sys-color-backdrop-blur-overlay),
-      var(--md-sys-color-backdrop-blur-overlay),
-    ),
     url("https://embed.pixiv.net/decorate.php?illust_id=85669957&mdate=1605360435")
       center top / contain repeat-y,
-    /* ▼ フォールバックの元の背景色 */
     var(--md-sys-color-surface-container, rgb(237 239 231));
   box-shadow: 0 2px 12px color-mix(in srgb, var(--md-sys-color-shadow, rgb(0 0 0)) 24%, transparent);
   text-align: center;
@@ -110,11 +104,35 @@ main {
   position: relative;
 }
 
+main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 16px;
+  pointer-events: none;
+}
+
+@media (prefers-color-scheme: light) {
+  main::before {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  main::before {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
 /* 各リンクに対してこれが重要 */
 main a.container {
   display: inline-block; /* インラインブロックで要素として認識させる */
   position: relative;    /* Rippleの基準点 */
   overflow: hidden;
+  z-index: 1;            /* ブラーより前面に表示 */
   text-decoration: none;
   cursor: pointer;
   /* 必要であればここでサイズを明示的に指定 */
