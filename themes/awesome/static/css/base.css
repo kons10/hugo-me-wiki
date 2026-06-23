@@ -328,6 +328,41 @@ footer.footer-main {
   filter: brightness(1.2);
 }
 
+/* フッター個人リンクのカラーテーマ対応 */
+@media (prefers-color-scheme: light) {
+  .footer-social-links a {
+    background: var(--md-sys-color-surface-container-high, rgb(231 233 225));
+  }
+  .footer-social-links a:hover {
+    background: var(--md-sys-color-secondary-fixed, rgb(209 233 201));
+  }
+  .footer-social-links img {
+    /* 白→黒→マテリアルプライマリカラー(緑 #006E1C 相当) */
+    filter: brightness(0) saturate(100%) invert(41%) sepia(93%) saturate(748%) hue-rotate(87deg) brightness(98%) contrast(103%);
+  }
+  .footer-social-links a:hover img {
+    /* ホバー時はより明るく鮮やかに */
+    filter: brightness(0) saturate(100%) invert(68%) sepia(39%) saturate(638%) hue-rotate(87deg) brightness(105%) contrast(102%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .footer-social-links a {
+    background: var(--md-sys-color-surface-container-high, rgb(40 43 38));
+  }
+  .footer-social-links a:hover {
+    background: var(--md-sys-color-secondary-fixed, rgb(209 233 201));
+  }
+  .footer-social-links img {
+    /* 白→黒→マテリアルプライマリカラー(緑 #006E1C 相当) */
+    filter: brightness(0) saturate(100%) invert(41%) sepia(93%) saturate(748%) hue-rotate(87deg) brightness(98%) contrast(103%);
+  }
+  .footer-social-links a:hover img {
+    /* ホバー時はより明るく鮮やかに */
+    filter: brightness(0) saturate(100%) invert(68%) sepia(39%) saturate(638%) hue-rotate(87deg) brightness(105%) contrast(102%);
+  }
+}
+
 .footer-divider {
   width: 80%;
   max-width: 600px;
