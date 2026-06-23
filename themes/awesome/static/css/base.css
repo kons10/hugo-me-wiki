@@ -191,7 +191,6 @@ md-elevated-button.banner-link-card {
   overflow: hidden;
   border: 1px solid color-mix(in srgb, var(--md-sys-color-outline-variant, rgb(193 201 187)) 72%, transparent);
   border-radius: 24px;
-  text-align: left;
   white-space: normal;
   text-wrap: wrap;
   box-sizing: border-box;
