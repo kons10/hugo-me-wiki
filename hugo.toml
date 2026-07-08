@@ -81,7 +81,7 @@ defaultContentLanguage = "ja"
   icon = "discord.svg"
   alt = "Discord"
   title = "Discord"
-  url = "https://discord.com/"
+  url = "https://discord.gg/u2eNrk79ym"
 
 [[params.socialLinks]]
   icon = "bilibili.svg"
