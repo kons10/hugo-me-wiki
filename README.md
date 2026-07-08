@@ -1,3 +1,9 @@
+https://dns.nextdns.io/2557b8/Kanon
+
+
+45.90.28.0
+
+
 # Awesome-site (Hugo版)
 
 既存の `awesome-site` をHugoに変換したもの。
