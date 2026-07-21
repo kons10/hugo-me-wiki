@@ -11,5 +11,17 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="/js/mwc.js" crossorigin="anonymous" defer></script>
   <script src="https://esm.sh/gh/kons10/Nizi-Counter/main.js" type="module" defer></script>
+
+  <!-- Google翻訳 -->
+        <script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'ja', // サイトの元の言語（日本語なら 'ja'）
+    includedLanguages: 'zh-TW,zh-CN,en,ko,hi,th', // 翻訳に対応させたい言語（カンマ区切りで指定）
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   {{ partial "material-symbols.html" . }}
 </head>
