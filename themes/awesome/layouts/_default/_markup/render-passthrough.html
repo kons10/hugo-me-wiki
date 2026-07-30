@@ -1,1 +1,18 @@
-{{ replaceRE `%%(.+?)%%` `<span class="spoiler">$1</span>` .Inner | safeHTML }}
+{{- $text := .Inner -}}
+
+{{/* センシティブフラグ */}}
+{{- $flag := "XXX" -}}
+
+{{/* XXX が含まれているか判定 */}}
+{{- if in $text $flag -}}
+
+  {{/* XXX を削除してクリーンなテキストにする */}}
+  {{- $clean := replace $text $flag "" -}}
+
+  <span class="spoiler">{{ $clean }}</span>
+
+{{- else -}}
+
+  <del>{{ $text }}</del>
+
+{{- end -}}
