@@ -299,7 +299,7 @@ md-elevated-button.banner-link-card:focus-within .banner-link-card__inner {
 /* =========================
    フッター
    ========================= */
-footer.footer-main {
+footer {
   background: var(--md-sys-color-surface-container-highest, rgb(225 227 220));
   color: var(--md-sys-color-on-surface, rgb(25 28 24));
   padding: 40px 0 30px 0;
