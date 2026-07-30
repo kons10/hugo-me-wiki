@@ -278,6 +278,24 @@ md-elevated-button.banner-link-card:focus-within .banner-link-card__inner {
   main { margin-top: 56px; }
 }
 
+/* Discord風ホバースポイラー */
+.spoiler-hover {
+  background-color: #202225; /* Discord風の暗い色 */
+  color: #202225;
+  border-radius: 3px;
+  padding: 0 4px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  cursor: help;
+  display: inline;
+}
+
+/* マウスホバーで文字を表示 */
+.spoiler-hover:hover {
+  background-color: transparent;
+  color: inherit;
+}
+
+
 /* =========================
    フッター
    ========================= */
