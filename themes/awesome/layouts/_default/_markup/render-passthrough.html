@@ -1,9 +1,0 @@
-{{- $text := .Inner -}}
-{{- $flag := "XXX" -}}
-
-{{- if in $text $flag -}}
-  {{- $clean := replace $text $flag "" -}}
-  <span class="spoiler">{{ $clean | safeHTML }}</span>
-{{- else -}}
-  {{ $text | safeHTML }}
-{{- end -}}
