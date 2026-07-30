@@ -1,4 +1,1 @@
-{{- $pattern := `\|\|(.+?)\|\|` -}}
-{{- $replacement := `<span class="spoiler">$1</span>` -}}
-{{- $processed := replaceRE $pattern $replacement $text -}}
-{{- $processed | safeHTML -}}
+{{ replaceRE `\|\|(.+?)\|\|` `<span class="spoiler">$1</span>` .Text | safeHTML }}
