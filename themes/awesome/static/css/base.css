@@ -8,13 +8,10 @@ html, body {
   box-sizing: border-box;
   background: transparent;
   font-family: 
-    "Microsoft YaHei",
-    "Microsoft JhengHei",
     "Hiragino Sans GB",
     "Noto Sans CJK SC",
     "Noto Sans CJK TC",
     "Noto Sans CJK JP",
-    "Yu Gothic",
     sans-serif;
 }
 
