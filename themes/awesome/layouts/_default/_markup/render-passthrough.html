@@ -1,1 +1,9 @@
-<span class="spoiler-hover">{{ .Content | safeHTML }}</span>
+{{- $text := .Text -}}
+
+{{/* Discord風の ||spoiler|| を検出して置換 */}}
+{{- $pattern := `\|\|(.+?)\|\|` -}}
+{{- $replacement := `<span class="spoiler">$1</span>` -}}
+
+{{- $processed := replaceRE $pattern $replacement $text -}}
+
+{{- $processed | safeHTML -}}
