@@ -1,1 +1,1 @@
-{{ replaceRE `\Q||\E(.+?)\Q||\E` `<span class="spoiler">$1</span>` .Inner | safeHTML }}
+{{ replaceRE `\\|\\|(.+?)\\|\\|` `<span class="spoiler">$1</span>` .Inner | safeHTML }}
