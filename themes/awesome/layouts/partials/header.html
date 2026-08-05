@@ -18,8 +18,6 @@
     <div class="nav-icon-links" style="position:fixed; top:0; right:1.5em; height:56px; display:flex; align-items:center; gap:2em;">
       {{- range .Site.Params.navLinks }}
       <a href="{{ .url }}"{{ if not (hasPrefix .url "/") }} target="_blank" rel="noopener noreferrer"{{ end }} title="{{ .alt }}">
-        <!-- Google翻訳ウィジェットを表示する場所 -->
-        <div id="google_translate_element"></div>
         {{- if .mdIcon }}
         <md-icon>{{ .mdIcon }}</md-icon>
         {{- else }}
