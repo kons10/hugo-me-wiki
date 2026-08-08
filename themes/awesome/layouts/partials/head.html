@@ -9,19 +9,34 @@
   <link rel="preload" href="/js/mwc.js" as="script" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script type="module">
+    import * as Turbo from 'https://cdn.jsdelivr.net/npm/@hotwired/turbo@8/dist/turbo.es2017-esm.js'
+  </script>
   <script src="/js/mwc.js" crossorigin="anonymous" defer></script>
   <script src="https://esm.sh/gh/kons10/Nizi-Counter/main.js" type="module" defer></script>
-
-  <!-- Google翻訳 -->
-        <script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'ja', // サイトの元の言語（日本語なら 'ja'）
-    includedLanguages: 'zh-TW,zh-CN,en,ko,hi,th', // 翻訳に対応させたい言語（カンマ区切りで指定）
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-  }, 'google_translate_element');
-}
-</script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+ 
+  <!-- Google翻訳 遅延ロード -->
+  <script>
+    function initGoogleTranslate() {
+      window.googleTranslateElementInit = function() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'ja',
+          includedLanguages: 'zh-TW,zh-CN,en,ko,hi,th',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+      };
+      let script = document.createElement('script');
+      script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+      document.head.appendChild(script);
+    }
+    
+    document.addEventListener('turbo:load', initGoogleTranslate);
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initGoogleTranslate);
+    } else {
+      initGoogleTranslate();
+    }
+  </script>
   {{ partial "material-symbols.html" . }}
 </head>
+ 
