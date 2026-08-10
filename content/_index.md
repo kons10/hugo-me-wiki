@@ -14,8 +14,8 @@ title: "Welcome to this page!"
 奏音公式です～
 　メインページって何置けばいい？
  ## 自分のサイトたち
-- [Blog](https://hugo.kto.f5.si)
-- [更新停止中のサイト](https://old.zyn.f5.si)
+- [Blog](https://blog.knn40.uk)
+- [更新停止中のサイト](https://old.knn40.uk)
 - [Silver Forest歌詞置き場](https://sf-wiki.f5.si)
 - [独立html apps](https://kons10.github.io/any-standalone-html/)
 
