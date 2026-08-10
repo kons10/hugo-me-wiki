@@ -1,4 +1,4 @@
-baseURL = "https://www.zyn.f5.si/"
+baseURL = "https://knn40.uk/"
 languageCode = "ja"
 title = "ZòuYīn"
 theme = "awesome"
@@ -81,7 +81,7 @@ defaultContentLanguage = "ja"
   icon = "bluesky.svg"
   alt = "Bluesky"
   title = "Bluesky"
-  url = "https://atp.zyn.f5.si"
+  url = "https://atp.knn40.uk"
 
 [[params.socialLinks]]
   icon = "discord.svg"
