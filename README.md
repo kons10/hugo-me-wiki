@@ -1,7 +1,3 @@
-https://dns.nextdns.io/2557b8/Kanon
-
-
-45.90.28.0
 
 
 # Awesome-site (Hugo版)
