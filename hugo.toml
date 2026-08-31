@@ -38,8 +38,8 @@ defaultContentLanguage = "ja"
 [[params.navLinks]]
   icon = "news.svg"
   mdIcon = "person_heart"
-  alt = "Medical Info"
-  url = "/medical/"
+  alt = "More Info"
+  url = "/more-info/"
 
 [[params.socialLinks]]
   icon = "x.svg"
