@@ -41,13 +41,6 @@ defaultContentLanguage = "ja"
   alt = "More Info"
   url = "/more-info/"
 
-
-[[params.navLinks]]
-  icon = "news.svg"
-  mdIcon = "explicit"
-  alt = "Sexual Info"
-  url = "/sexual/"
-
 [[params.socialLinks]]
   icon = "x.svg"
   alt = "X"
