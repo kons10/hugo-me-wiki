@@ -16,5 +16,6 @@ date: 2026-09-18
 
 ## 自分のサイトたち
 - [Blog](https://blog.knn40.uk)
+- [MaterialBlue](https://bsky.knn40.uk)
 - [Silver Forest歌詞置き場](https://sf-wiki.f5.si)
 - [独立html apps](https://kons10.github.io/any-standalone-html/)
