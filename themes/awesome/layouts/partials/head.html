@@ -1,23 +1,68 @@
 <head>
+  {{- $title := .Site.Title -}}
+  {{- if not .IsHome -}}
+    {{- $title = printf "%s | %s" .Title .Site.Title -}}
+  {{- end -}}
+  {{- $description := .Description -}}
+  {{- if not $description -}}
+    {{- $description = .Site.Params.description -}}
+  {{- end -}}
+
   <meta charset="UTF-8">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ $description | plainify }}">
+  {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}>
+  {{ hugo.Generator }}
+
+  <title>{{ $title }}</title>
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:description" content="{{ $description | plainify }}">
+  <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <meta property="og:locale" content="ja_JP">
+  {{ with .Params.images }}
+    {{ with index . 0 }}
+      <meta property="og:image" content="{{ . | absURL }}">
+    {{ end }}
+  {{ end }}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ $title }}">
+  <meta name="twitter:description" content="{{ $description | plainify }}">
+  {{ with .Params.images }}
+    {{ with index . 0 }}
+      <meta name="twitter:image" content="{{ . | absURL }}">
+    {{ end }}
+  {{ end }}
+
+  <!-- Styles -->
   <link rel="stylesheet" href="{{ "css/base.css" | relURL }}" crossorigin="anonymous">
   <link rel="stylesheet" href="{{ "css/dark.css" | relURL }}" crossorigin="anonymous">
   <link rel="stylesheet" media="(prefers-color-scheme: light)" href="{{ "css/light.css" | relURL }}" crossorigin="anonymous">
-  <link rel="preload" href="/js/mwc.js" as="script" crossorigin="anonymous">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Turbo -->
   <script type="module">
     import * as Turbo from 'https://cdn.jsdelivr.net/npm/@hotwired/turbo@8/dist/turbo.es2017-esm.js'
   </script>
-  <script src="/js/mwc.js" crossorigin="anonymous" defer></script>
+
+  <!-- Material Web Components -->
+  <script src="{{ "js/mwc.js" | relURL }}" crossorigin="anonymous" defer></script>
+
+  <!-- Nizi Counter -->
   <script src="https://esm.sh/gh/kons10/Nizi-Counter/main.js" type="module" defer></script>
 
   <!-- 坚持开放安卓系统 -->
   <script src="https://keepandroidopen.org/banner.js?lang=ja&size=minimal&animation=off&id=my-banner&hidebutton=off" defer></script>
-  
+
   <!-- Google翻訳 遅延ロード -->
   <script>
     function initGoogleTranslate() {
@@ -28,18 +73,20 @@
           layout: google.translate.TranslateElement.InlineLayout.SIMPLE
         }, 'google_translate_element');
       };
-      let script = document.createElement('script');
+
+      const script = document.createElement('script');
       script.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
       document.head.appendChild(script);
     }
-    
+
     document.addEventListener('turbo:load', initGoogleTranslate);
+
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', initGoogleTranslate);
     } else {
       initGoogleTranslate();
     }
   </script>
+
   {{ partial "material-symbols.html" . }}
 </head>
- 
