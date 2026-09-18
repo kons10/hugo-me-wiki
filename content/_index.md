@@ -14,8 +14,9 @@ date: 2026-09-18
 <md-icon>school</md-icon> 学生 / <md-icon>japanese_flag</md-icon> 日本在住
 <md-icon>cake</md-icon> 2月21日
 
-## 自分のサイトたち
+## Apps
 - [Blog](https://blog.knn40.uk)
 - [MaterialBlue](https://bsky.knn40.uk)
-- [Silver Forest歌詞置き場](https://sf-wiki.f5.si)
-- [独立html apps](https://kons10.github.io/any-standalone-html/)
+- [擬似ChromeOS](https://on-chromeos.pages.dev)
+- [Silver Forest歌詞wiki](https://sf-wiki.f5.si)
+- [独立html apps](https://kons10.github.io/any-standalone-html)
