@@ -20,14 +20,5 @@ date: 2026-09-18
 ---
 
 # 👋 奏音 / Kanon (@kons10)
-
-![icon](https://esm.sh/gh/Linux-jam/Photo-Gallery/z0uy1n.webp)
-
 <md-icon>school</md-icon> 学生 / <md-icon>japanese_flag</md-icon> 日本在住
 <md-icon>cake</md-icon> 2月21日
-
----
-
-
-
----
