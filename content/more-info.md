@@ -1,13 +1,42 @@
 ---
 title: "More Profile"
-date: 2026-08-31
+date: 2026-09-18
 ---
 
 # About Me
 
-**表示名**：ZòuYīn（奏音 / かのん）
+**名前**：ZòuYīn（奏音 / かのん）
+🎮 趣味 & 興味
+- 💻 プログラミング
+- 🐧 Linux / OSS
+- 📷 写真撮影（風景・自然）
+- 📺 アニメ鑑賞
+- 🎮 VRChat / Minecraft
+- 🇨🇳 中国語（簡体字）勉強中
 
-私は学生で、技術系のことや配信、軽い創作活動が好きです。ここでは日常的なプロフィール、趣味、好きなものなど、一般公開して問題のない内容をまとめています。
+---
+
+## <md-icon>devices_other</md-icon> 布陣
+
+### <md-icon>desktop_windows</md-icon> 主PC
+- OS:Windows 11 Pro With KSM
+- RAM:Panram DDR4-2666 16GB×2枚
+- SSD:WD Green M.2 SATA 2280 480GB
+- M/B:GIGABYTE A52M S2H
+- GPU:GALAXY GF PGTX750Ti-OC-LP/2GD5
+- Power:Antec NE550 Gold
+
+### <md-icon>laptop_windows</md-icon> 学Tab
+- OS:Windows 11 Pro Education Digital lisence
+- CPU:Intel(R) Pentium(R) Silver N6000 @ 1.10GHz (1.11 GHz)
+- RAM:8GB RAM
+
+### <md-icon>mobile_2</md-icon> Mobile
+- <md-icon>adb</md-icon> 801FJ (Arrows U ADB済)−没収済
+- <md-icon>android</md-icon> 801FJ (Arrows U 未ADB)−没収済
+- <md-icon>android</md-icon> 602SO (Xperia XZs)−没収済
+- <md-icon>android</md-icon> LG-D821 (LG Nexus 5)-最近使ってない
+- <md-icon>ios</md-icon> iPhone 5s (DoCoMo)−最近使ってない
 
 ---
 
@@ -19,11 +48,6 @@ date: 2026-08-31
 - 公開しているプロジェクト：
   - [`MaterialBlue`](https://github.com/kons10/MaterialBlue) — Material Design による Bluesky クライアント（Web App）。
   - [`onChromeOS`](https://github.com/kons10/onChromeOS) — ChromeOS 向けの Web ダミー。
-
-**配信・表現**
-
-- マイクを使った配信（ぶいちゃ）をやってみたいと考えています。
-- 学生時代は体操を習っており、軽スポーツ系のクラブ活動経験があります。
 
 ---
 
@@ -52,9 +76,3 @@ date: 2026-08-31
 **好きなおでんの具**：もち。  
 **好きな中華料理**：台湾ラーメン。  
 **好きなお弁当のおかずベスト3**：1. しそおにぎり　2. パン　3. チヂミ
-
----
-
-## 変更履歴（管理用）
-
-- 2026-09-16 センシティブ情報を非公開領域へ分離
