@@ -16,4 +16,4 @@ bannerが増えても見やすいよう、Markdown linkだけで管理。
 [![一樹](https://site.l-ituki8000.workers.dev/images/slink.png)](https://l-ituki8000.f5.si/ "学タブの裏技の研究同胞")
 [![Smirnova](https://mahiro.uk/favicon.ico)](https://mahiro.uk/ "デザインのいいサイトを作ってる学生さん")
 [![秋雨落](https://avatars.githubusercontent.com/u/53731501)](https://blog.yuluo.dev/ "JavaScript得意なGitHubたくさんやってる人")
-[![liru / midnight garden](https://mahiro.uk/favicon.ico)](https://liru.me/ "大切な私のお姉ちゃん")
+[![liru / midnight garden](https://liru.me/favicon.svg)](https://liru.me/ "大切な私のお姉ちゃん")
