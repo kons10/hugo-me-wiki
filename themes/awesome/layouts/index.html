@@ -1,5 +1,67 @@
 {{ define "main" }}
   <div id="my-banner"></div>
-  <h1>{{ .Title }}</h1>
+
+  <h1>
+    <md-icon>auto_awesome</md-icon>
+    {{ .Title }}
+  </h1>
+
   {{ .Content }}
+
+  <p>
+    <md-filled-button href="{{ "links/" | relURL }}">
+      <md-icon slot="icon">link</md-icon>
+      Links
+    </md-filled-button>
+    <md-outlined-button href="{{ "more-info/" | relURL }}">
+      <md-icon slot="icon">info</md-icon>
+      More Info
+    </md-outlined-button>
+  </p>
+
+  <h2>
+    <md-icon>apps</md-icon>
+    Apps
+  </h2>
+
+  <md-list>
+    <md-list-item href="https://blog.knn40.uk" type="link">
+      <md-icon slot="start">article</md-icon>
+      <div slot="headline">Blog</div>
+      <div slot="supporting-text">ブログ</div>
+      <md-icon slot="end">open_in_new</md-icon>
+    </md-list-item>
+    <md-divider></md-divider>
+
+    <md-list-item href="https://bsky.knn40.uk" type="link">
+      <md-icon slot="start">cloud</md-icon>
+      <div slot="headline">MaterialBlue</div>
+      <div slot="supporting-text">Blueskyクライアント</div>
+      <md-icon slot="end">open_in_new</md-icon>
+    </md-list-item>
+    <md-divider></md-divider>
+
+    <md-list-item href="https://on-chromeos.pages.dev" type="link">
+      <md-icon slot="start">desktop_windows</md-icon>
+      <div slot="headline">擬似ChromeOS</div>
+      <div slot="supporting-text">ブラウザ上のChromeOS風デスクトップ</div>
+      <md-icon slot="end">open_in_new</md-icon>
+    </md-list-item>
+    <md-divider></md-divider>
+
+    <md-list-item href="https://sf-wiki.f5.si" type="link">
+      <md-icon slot="start">library_music</md-icon>
+      <div slot="headline">Silver Forest歌詞wiki</div>
+      <div slot="supporting-text">Silver Forestの歌詞Wiki</div>
+      <md-icon slot="end">open_in_new</md-icon>
+    </md-list-item>
+    <md-divider></md-divider>
+
+    <md-list-item href="https://kons10.github.io/any-standalone-html" type="link">
+      <md-icon slot="start">code</md-icon>
+      <div slot="headline">独立html apps</div>
+      <div slot="supporting-text">単体で動作するHTMLアプリ集</div>
+      <md-icon slot="end">open_in_new</md-icon>
+    </md-list-item>
+  </md-list>
 {{ end }}
