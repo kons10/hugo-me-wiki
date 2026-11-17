@@ -14,7 +14,9 @@ bannerが増えても見やすいよう、Markdown linkだけで管理。
 [![風止渚のホームページ](https://i.imgur.com/94ifNlf.webp)](https://kzng.f5.si/ "一日にやってることが多い高専の人")
 [![𝓢o𝓲c𝓱i](https://soichi-portfolio.soichi1208.workers.dev/header.svg)](https://soichi-portfolio.soichi1208.workers.dev/ "Tor鯖を運営している、天子ちゃん大好きな人")
 [![一樹](https://site.l-ituki8000.workers.dev/images/slink.png)](https://l-ituki8000.f5.si/ "学タブの裏技の研究同胞")
-[![Smirnova](https://mahiro.uk/favicon.ico)](https://mahiro.uk/ "デザインのいいサイトを作ってる学生さん")
+[![Smirnova](https://t2.gstatic.com/faviconV2?type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://mahiro.uk&size=256)](https://mahiro.uk/ "デザインのいいサイトを作ってる学生さん")
 [![秋雨落](https://avatars.githubusercontent.com/u/53731501)](https://blog.yuluo.dev/ "JavaScript得意なGitHubたくさんやってる人")
 [![liru / midnight garden](https://liru.me/favicon.svg)](https://liru.me/ "大切な私のお姉ちゃん")
 [![くぁー](https://t2.gstatic.com/faviconV2?type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://kubobeem.me&size=256)](https://kubobeem.me/ "OSS系のヤバい人")
+
+[![くぁー](https://t2.gstatic.com/faviconV2?type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://amanetoki.com&size=256)](https://amanetoki.com/ "OSS系のヤバい人")
