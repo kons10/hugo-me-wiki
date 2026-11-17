@@ -19,4 +19,5 @@ bannerが増えても見やすいよう、Markdown linkだけで管理。
 [![liru / midnight garden](https://liru.me/favicon.svg)](https://liru.me/ "大切な私のお姉ちゃん")
 [![くぁー](https://t2.gstatic.com/faviconV2?type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://kubobeem.me&size=256)](https://kubobeem.me/ "OSS系のヤバい人")
 
-[![くぁー](https://t2.gstatic.com/faviconV2?type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://amanetoki.com&size=256)](https://amanetoki.com/ "OSS系のヤバい人")
+[![雨音とき](https://t2.gstatic.com/faviconV2?type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://amanetoki.com&size=256)](https://amanetoki.com/ "Fluent Designの公式サイト構えてる")
+
