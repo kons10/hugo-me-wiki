@@ -18,4 +18,4 @@ bannerが増えても見やすいよう、Markdown linkだけで管理。
 [![秋雨落](https://avatars.githubusercontent.com/u/53731501)](https://blog.yuluo.dev/ "JavaScript得意なGitHubたくさんやってる人")
 [![liru / midnight garden](https://liru.me/favicon.svg)](https://liru.me/ "大切な私のお姉ちゃん")
 [![くぁー](https://t2.gstatic.com/faviconV2?type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://kubobeem.me&size=256)](https://kubobeem.me/ "OSS系のヤバい人")
-[![雨音とき](https://t2.gstatic.com/faviconV2?type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://amanetoki.com&size=256)](https://amanetoki.com/ "Fluent Designの公式サイト構えてる")
+[![雨音とき](https://amanetoki.com/pwa/apple-touch-icon.png)](https://amanetoki.com/ "Fluent Designの公式サイト構えてる")
